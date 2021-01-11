@@ -42,8 +42,20 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 1408839163
+    locked: 0
+  - name: Wall
+    uniqueID: 451324451
+    locked: 0
   - name: Empty
     uniqueID: 891008027
+    locked: 0
+  - name: Glass
+    uniqueID: 193885205
+    locked: 0
+  - name: Boundary
+    uniqueID: 864617043
     locked: 0
   - name: Ground
     uniqueID: 2752376763
