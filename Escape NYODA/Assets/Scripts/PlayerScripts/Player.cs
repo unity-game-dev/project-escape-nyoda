@@ -18,6 +18,7 @@ namespace projectNyodaToolkit
         private Vector2 facingLeft;
 
         protected InputManager input;
+        protected ObjectPooler objectPooler;
 
         //animator
         protected Animator anim;
@@ -35,6 +36,7 @@ namespace projectNyodaToolkit
             //Store localscale values when sprite facing left
             facingLeft = new Vector2(-transform.localScale.x, transform.localScale.y);
             input = GetComponent<InputManager>();
+            objectPooler = ObjectPooler.Instance;
         }
 
         //method to flip sprites

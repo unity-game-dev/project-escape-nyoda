@@ -9,12 +9,14 @@ namespace projectNyodaToolkit
         [SerializeField] protected KeyCode croucH;
         [SerializeField] protected KeyCode sprintinG;
         [SerializeField] protected KeyCode jumP;
+        [SerializeField] protected KeyCode firE;
         // Update is called once per frame
         void Update()
         {
             CrouchHeld();
             SprintingHeld();
             JumpPressed();
+            WeaponFired();
         }
         public virtual bool CrouchHeld()
         {
@@ -43,6 +45,17 @@ namespace projectNyodaToolkit
             {
                 return true;
             } else
+            {
+                return false;
+            }
+        }
+        public virtual bool WeaponFired()
+        {
+            if (Input.GetKeyDown(firE))
+            {
+                return true;
+            }
+            else
             {
                 return false;
             }

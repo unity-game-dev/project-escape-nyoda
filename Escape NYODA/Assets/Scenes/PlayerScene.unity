@@ -1113,6 +1113,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1577677592, guid: 1ac79d6667f63624a989969a53cf5bd5, type: 3}
+      propertyPath: gunBarrel
+      value: 
+      objectReference: {fileID: 639767591659743441}
+    - target: {fileID: 1577677592, guid: 1ac79d6667f63624a989969a53cf5bd5, type: 3}
+      propertyPath: gunRotation
+      value: 
+      objectReference: {fileID: 639767591659743441}
     - target: {fileID: 639767592199721856, guid: 1ac79d6667f63624a989969a53cf5bd5,
         type: 3}
       propertyPath: m_Name
@@ -1175,3 +1183,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ac79d6667f63624a989969a53cf5bd5, type: 3}
+--- !u!4 &639767591659743441 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1614034560435672736, guid: 1ac79d6667f63624a989969a53cf5bd5,
+    type: 3}
+  m_PrefabInstance: {fileID: 639767591659743440}
+  m_PrefabAsset: {fileID: 0}
