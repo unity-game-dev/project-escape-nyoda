@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - GroundCheck
+  - PlayerUI
+  - pAmmo
+  - sAmmo
   layers:
   - Default
   - TransparentFX
@@ -16,9 +19,9 @@ TagManager:
   - 
   - Player
   - Ground
-  - 
-  - 
-  - 
+  - Ladder
+  - Enemy
+  - Projectile
   - 
   - 
   - 
@@ -48,6 +51,12 @@ TagManager:
   - name: Wall
     uniqueID: 451324451
     locked: 0
+  - name: Ladder
+    uniqueID: 265904945
+    locked: 0
+  - name: Ground
+    uniqueID: 2752376763
+    locked: 0
   - name: Empty
     uniqueID: 891008027
     locked: 0
@@ -56,7 +65,4 @@ TagManager:
     locked: 0
   - name: Boundary
     uniqueID: 864617043
-    locked: 0
-  - name: Ground
-    uniqueID: 2752376763
     locked: 0
