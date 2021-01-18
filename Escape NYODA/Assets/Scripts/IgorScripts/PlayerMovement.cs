@@ -26,6 +26,9 @@ public class PlayerMovement : MonoBehaviour {
 		if (igorDash.currentDashTime > 0f)
 		{
 			runSpeed = 80f;
+		} else
+		{
+			runSpeed = 40f;
 		}
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 		anim.SetFloat("Speed", Mathf.Abs(horizontalMove));
