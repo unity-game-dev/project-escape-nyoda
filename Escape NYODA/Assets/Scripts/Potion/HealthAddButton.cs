@@ -5,33 +5,24 @@ using UnityEngine.UI;
 public class HealthAddButton : MonoBehaviour
 {
     private IgorHealth igorHealth;
-    private HealthBar healthBar;
     public int healthBoost = 30;
-    public bool isUseHealthItem = false;
+    public delegate void HPIncrease();
+    public static event HPIncrease hpIncrease;
+
     private void Start()
     {
         igorHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<IgorHealth>();
-        //healthBar = GameObject.FindGameObjectWithTag("PlayerUI").GetComponent<HealthBar>();
     }
 
     public void Use()
     {
         if (igorHealth.currentHealth < igorHealth.maxHealth)
         {
-            isUseHealthItem = true;
             igorHealth.currentHealth += healthBoost;
-            healthBar.SetHealth(igorHealth.currentHealth);
             Destroy(gameObject);
+            hpIncrease();
         }
-        
     }
 
-    /*private void Update()
-    {
-        if (isUseHealthItem)
-        {
-            igorHealth.currentHealth += healthBoost;
-            isUseHealthItem = false;
-        }
-    }*/
+    
 }

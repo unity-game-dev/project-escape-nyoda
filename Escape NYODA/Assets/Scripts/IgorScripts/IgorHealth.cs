@@ -50,9 +50,20 @@ public class IgorHealth : MonoBehaviour
 
     void AddHealth()
     {
-        
-            currentHealth += healthBoost;
-            healthBar.SetHealth(currentHealth);
-            //healthAddButton.isUseHealthItem = false;
+        currentHealth += healthBoost;
+        healthBar.SetHealth(currentHealth);    
+    }
+    void OnEnabled()
+    {
+        HealthAddButton.hpIncrease += UsedIsClicked;
+    }
+    void OnDisable()
+    {
+        HealthAddButton.hpIncrease -= UsedIsClicked;
+    }
+
+    void UsedIsClicked()
+    {
+        healthBar.SetHealth(currentHealth);
     }
 }
