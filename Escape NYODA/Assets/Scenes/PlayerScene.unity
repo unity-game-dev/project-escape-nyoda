@@ -3927,6 +3927,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 252821763, guid: 27aa46ac8eb35b04baedc69946f8968d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.09
+      objectReference: {fileID: 0}
     - target: {fileID: 675545783, guid: 27aa46ac8eb35b04baedc69946f8968d, type: 3}
       propertyPath: healthBar
       value: 
@@ -3943,6 +3947,10 @@ PrefabInstance:
       propertyPath: invincibleBar
       value: 
       objectReference: {fileID: 296697735}
+    - target: {fileID: 1833437026, guid: 27aa46ac8eb35b04baedc69946f8968d, type: 3}
+      propertyPath: attackRange
+      value: 0.93
+      objectReference: {fileID: 0}
     - target: {fileID: 1833437034, guid: 27aa46ac8eb35b04baedc69946f8968d, type: 3}
       propertyPath: slots.Array.data[0]
       value: 
