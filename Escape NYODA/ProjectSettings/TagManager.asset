@@ -57,6 +57,9 @@ TagManager:
   - name: Ground
     uniqueID: 2752376763
     locked: 0
+  - name: Portal
+    uniqueID: 1946159247
+    locked: 0
   - name: Empty
     uniqueID: 891008027
     locked: 0

@@ -1,0 +1,1112 @@
+fileFormatVersion: 2
+guid: 649776183d507bd4683b484d16062d6d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9013480466962050287
+    second: End Portal Open_0
+  - first:
+      213: -5951465893144145165
+    second: End Portal Open_1
+  - first:
+      213: 4101758247924072267
+    second: End Portal Open_2
+  - first:
+      213: 8098069700649775407
+    second: End Portal Open_3
+  - first:
+      213: -6761298249856769705
+    second: End Portal Open_4
+  - first:
+      213: 8892970835322241530
+    second: End Portal Open_5
+  - first:
+      213: -4558900400978708064
+    second: End Portal Open_6
+  - first:
+      213: -4790783078172379922
+    second: End Portal Open_7
+  - first:
+      213: -5824513772393894016
+    second: End Portal Open_8
+  - first:
+      213: 1390783697132053160
+    second: End Portal Open_9
+  - first:
+      213: 5645395565785345636
+    second: End Portal Open_10
+  - first:
+      213: 5934221083385137883
+    second: End Portal Open_11
+  - first:
+      213: -5731642681084619445
+    second: End Portal Open_12
+  - first:
+      213: -1192260803509644055
+    second: End Portal Open_13
+  - first:
+      213: 2502678848142713630
+    second: End Portal Open_14
+  - first:
+      213: -3265771540842994610
+    second: End Portal Open_15
+  - first:
+      213: 2996877932842135656
+    second: End Portal Open_16
+  - first:
+      213: -358405513372501616
+    second: End Portal Open_17
+  - first:
+      213: 6380776326523153831
+    second: End Portal Open_18
+  - first:
+      213: -5563866999740683132
+    second: End Portal Open_19
+  - first:
+      213: 2242615433416338241
+    second: End Portal Open_20
+  - first:
+      213: 5165640367345361488
+    second: End Portal Open_21
+  - first:
+      213: 1457736253495920701
+    second: End Portal Open_22
+  - first:
+      213: -7678725575920021315
+    second: End Portal Open_23
+  - first:
+      213: -7290995486414246877
+    second: End Portal Open_24
+  - first:
+      213: 5335298695411347513
+    second: End Portal Open_25
+  - first:
+      213: -7426508410700016387
+    second: End Portal Open_26
+  - first:
+      213: 8165858855774307866
+    second: End Portal Open_27
+  - first:
+      213: -5511348588016967091
+    second: End Portal Open_28
+  - first:
+      213: 2904396390910179582
+    second: End Portal Open_29
+  - first:
+      213: 2270253631791042674
+    second: End Portal Open_30
+  - first:
+      213: 4491899651889538230
+    second: End Portal Open_31
+  - first:
+      213: -4430824806132475326
+    second: End Portal Open_32
+  - first:
+      213: 1715156239499205451
+    second: End Portal Open_33
+  - first:
+      213: -3000197712457341772
+    second: End Portal Open_34
+  - first:
+      213: -7616600502086013895
+    second: End Portal Open_35
+  - first:
+      213: -6680499965873470167
+    second: End Portal Open_36
+  - first:
+      213: -1861260279288265895
+    second: End Portal Open_37
+  - first:
+      213: -3003228442059769290
+    second: End Portal Open_38
+  - first:
+      213: -3074103085796612395
+    second: End Portal Open_39
+  - first:
+      213: -8923860675087826682
+    second: End Portal Open_40
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: End Portal Open_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1959
+        width: 152
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1131ec0554fa9e280800000000000000
+      internalID: -9013480466962050287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_1
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1959
+        width: 151
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f25a4a6d45286da0800000000000000
+      internalID: -5951465893144145165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_2
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 1959
+        width: 152
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ffa0af46f5ce830800000000000000
+      internalID: 4101758247924072267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_3
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 1959
+        width: 151
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f217591cc7f126070800000000000000
+      internalID: 8098069700649775407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_4
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 1959
+        width: 152
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75121dc801b0b22a0800000000000000
+      internalID: -6761298249856769705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_5
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 1959
+        width: 151
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af18a459bdd2a6b70800000000000000
+      internalID: 8892970835322241530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_6
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1640
+        width: 152
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a937494d388bb0c0800000000000000
+      internalID: -4558900400978708064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_7
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 1649
+        width: 112
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4359d4c28b38db0800000000000000
+      internalID: -4790783078172379922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_8
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 1659
+        width: 71
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f6717659b2b2fa0800000000000000
+      internalID: -5824513772393894016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_9
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1710
+        width: 71
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2e5f2676e0d4310800000000000000
+      internalID: 1390783697132053160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_10
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 1729
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e63334b59785e40800000000000000
+      internalID: 5645395565785345636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_11
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 1669
+        width: 81
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda0ecd62a69a5250800000000000000
+      internalID: 5934221083385137883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_12
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1329
+        width: 152
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45db7e595d1570b0800000000000000
+      internalID: -5731642681084619445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_13
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1329
+        width: 182
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e49f27bd1d347fe0800000000000000
+      internalID: -1192260803509644055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_14
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 1339
+        width: 131
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e132e62172d4bb220800000000000000
+      internalID: 2502678848142713630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_15
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 1399
+        width: 172
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44297e1616ada2d0800000000000000
+      internalID: -3265771540842994610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_16
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 1339
+        width: 191
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860334e0a9c079920800000000000000
+      internalID: 2996877932842135656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_17
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 1280
+        width: 192
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099f3e1a510b60bf0800000000000000
+      internalID: -358405513372501616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_18
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 959
+        width: 191
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad62ad13421d8850800000000000000
+      internalID: 6380776326523153831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_19
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 959
+        width: 192
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c20fe317c29c2b0800000000000000
+      internalID: -5563866999740683132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_20
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 959
+        width: 191
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14be694dade5f1f10800000000000000
+      internalID: 2242615433416338241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_21
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 959
+        width: 192
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052e90d9b8a00b740800000000000000
+      internalID: 5165640367345361488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_22
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 959
+        width: 191
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3845dd266bea3410800000000000000
+      internalID: 1457736253495920701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_23
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 959
+        width: 192
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db09497b5cfaf6590800000000000000
+      internalID: -7678725575920021315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_24
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 639
+        width: 191
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c6d450c3e21da90800000000000000
+      internalID: -7290995486414246877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_25
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 639
+        width: 192
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 930399655e9ca0a40800000000000000
+      internalID: 5335298695411347513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_26
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 639
+        width: 191
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df456c2a2fdbfe890800000000000000
+      internalID: -7426508410700016387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_27
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 639
+        width: 192
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a16c7606d55f25170800000000000000
+      internalID: 8165858855774307866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_28
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 639
+        width: 191
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d42e5e9d8a1c383b0800000000000000
+      internalID: -5511348588016967091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_29
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 639
+        width: 192
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8b02f112d7e4820800000000000000
+      internalID: 2904396390910179582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_30
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 319
+        width: 191
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27012f856af818f10800000000000000
+      internalID: 2270253631791042674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_31
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 319
+        width: 192
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b4a39d2fee665e30800000000000000
+      internalID: 4491899651889538230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_32
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 319
+        width: 191
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a1c78705c8282c0800000000000000
+      internalID: -4430824806132475326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_33
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 319
+        width: 192
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b15a533857dc710800000000000000
+      internalID: 1715156239499205451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_34
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 319
+        width: 191
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b46a0583182d56d0800000000000000
+      internalID: -3000197712457341772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_35
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 319
+        width: 192
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ce915a2366c4690800000000000000
+      internalID: -7616600502086013895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_36
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 0
+        width: 191
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9254a140da81a43a0800000000000000
+      internalID: -6680499965873470167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_37
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 0
+        width: 192
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9538a7a23a97b26e0800000000000000
+      internalID: -1861260279288265895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_38
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 0
+        width: 191
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a7dabc4a36256d0800000000000000
+      internalID: -3003228442059769290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_39
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 0
+        width: 192
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d62920e7879655d0800000000000000
+      internalID: -3074103085796612395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: End Portal Open_40
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 0
+        width: 191
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60100542ff3182480800000000000000
+      internalID: -8923860675087826682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
