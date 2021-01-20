@@ -48,7 +48,8 @@ public class IgorHealth : MonoBehaviour
         }
     }
 
-    void TakeDamage(int damage)
+    //****  CHANGED TAKEDAMAGE TO PUBLIC ***///
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
