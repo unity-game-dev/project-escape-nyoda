@@ -16,7 +16,6 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        Debug.Log(hitInfo.name);
         //***//
         if(hitInfo.tag == "Robot")
         {
@@ -30,6 +29,15 @@ public class Bullet : MonoBehaviour
         else if (hitInfo.tag == "Plasma")
         {
             Robot_follow enemy = hitInfo.GetComponent<Robot_follow>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(attackDamage);
+            }
+
+        }
+        else if (hitInfo.tag == "Guard")
+        {
+            Guard_behaviour enemy = hitInfo.GetComponent<Guard_behaviour>();
             if (enemy != null)
             {
                 enemy.TakeDamage(attackDamage);

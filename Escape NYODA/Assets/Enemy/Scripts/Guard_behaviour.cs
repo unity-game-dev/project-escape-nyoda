@@ -13,7 +13,9 @@ public class Guard_behaviour : MonoBehaviour
     public float moveSpeed;
     public float timer;
     public Transform leftLimit;
-    public Transform rightLimit;
+    public Transform rightLimit; 
+    public int maxHealth = 200;
+    int currentHealth;
     #endregion
 
     #region Private Variables
@@ -27,9 +29,17 @@ public class Guard_behaviour : MonoBehaviour
     private float intTimer;
     #endregion
 
+
+
+    private void Start()
+    {
+        currentHealth = maxHealth;
+    }
     void Awake()
     {
+        
         SelectTarget();
+        
         intTimer = timer;
         anim = GetComponent<Animator>();
     }
@@ -109,6 +119,7 @@ public class Guard_behaviour : MonoBehaviour
 
     void Attack()
     {
+
         timer = intTimer;
         attackMode = true;
         anim.SetBool("canWalk", false);
@@ -181,5 +192,25 @@ public class Guard_behaviour : MonoBehaviour
             rotation.y = 0f;
         }
         transform.eulerAngles = rotation;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        Debug.Log(damage);
+        currentHealth -= damage;
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Debug.Log("Enemy died");
+        //anim.SetBool("die", true);
+        Destroy(gameObject, 2f);
+        this.enabled = false;
+
     }
 }

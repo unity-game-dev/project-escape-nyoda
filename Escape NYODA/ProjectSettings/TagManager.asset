@@ -8,6 +8,9 @@ TagManager:
   - PlayerUI
   - pAmmo
   - sAmmo
+  - Plasma
+  - Robot
+  - Guard
   layers:
   - Default
   - TransparentFX
