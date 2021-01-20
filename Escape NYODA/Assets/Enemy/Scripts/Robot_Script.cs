@@ -9,6 +9,14 @@ public class Robot_Script : MonoBehaviour
     public float lineOfSite;
     public float shootingRange;
     public float fireRate = 1;
+    public int maxHealth = 100;
+
+    public Transform attackPoint;
+    public float attackRange = 0.5f;
+    public LayerMask enemyLayers;
+
+
+    int currentHealth;
     private float nextFireTime;
     protected bool facingRight;
     public GameObject bullet;
@@ -17,7 +25,7 @@ public class Robot_Script : MonoBehaviour
     private Animator anim;
     void Start()
     {
-
+        currentHealth = maxHealth;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         anim = GetComponent<Animator>();
     }
@@ -35,6 +43,7 @@ public class Robot_Script : MonoBehaviour
         {
             //Instantiate(bullet, bulletParent.transform.position, Quaternion.identity);
             anim.SetBool("Attack", true);
+            Attack();
             nextFireTime = Time.time + fireRate;
         }
         if (Vector3.Distance(player.position, transform.position) < 20)
@@ -45,11 +54,32 @@ public class Robot_Script : MonoBehaviour
                 Flip();
         }
     }
+    void Attack()
+    {
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        foreach (Collider2D hitInfo in hitEnemies)
+        {
+            //Debug.Log(hitInfo.name);
+            IgorHealth enemy = hitInfo.GetComponent<IgorHealth>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(10);
+            }
+
+
+        }
+
+    }
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, lineOfSite);
         Gizmos.DrawWireSphere(transform.position, shootingRange);
+        if (attackPoint == null)
+        {
+            return;
+        }
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
     void Flip()
     {
@@ -58,5 +88,25 @@ public class Robot_Script : MonoBehaviour
         transform.localScale = scale;
         facingRight = !facingRight;
     }
-    
+
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Debug.Log("Enemy died");
+        anim.SetBool("die", true);
+        Destroy(gameObject,2f);
+        this.enabled = false;
+
+    }
+
 }
+    
