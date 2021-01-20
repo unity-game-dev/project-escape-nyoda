@@ -17,7 +17,15 @@ public class Bullet_Script : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
-         Destroy(gameObject);
+        Debug.Log(hitInfo.name);
+        //***//
+        IgorHealth enemy = hitInfo.GetComponent<IgorHealth>();
+        if (enemy != null)
+        {
+            enemy.TakeDamage(15);
+        }
+        //***//
+        Destroy(gameObject);
         
         
     }

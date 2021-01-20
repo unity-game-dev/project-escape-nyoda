@@ -18,10 +18,23 @@ public class Bullet : MonoBehaviour
     {
         Debug.Log(hitInfo.name);
         //***//
-        Robot_Script enemy = hitInfo.GetComponent<Robot_Script>();
-        if (enemy != null)
+        if(hitInfo.tag == "Robot")
         {
-            enemy.TakeDamage(attackDamage);
+            Robot_Script enemy = hitInfo.GetComponent<Robot_Script>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(attackDamage);
+            }
+            
+        }
+        else if (hitInfo.tag == "Plasma")
+        {
+            Robot_follow enemy = hitInfo.GetComponent<Robot_follow>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(attackDamage);
+            }
+
         }
         //***//
         Destroy(gameObject);

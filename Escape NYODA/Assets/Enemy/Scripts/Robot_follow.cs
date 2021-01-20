@@ -8,6 +8,9 @@ public class Robot_follow : MonoBehaviour
     public float lineOfSite;
     public float shootingRange;
     public float fireRate = 1;
+    public int maxHealth = 100;
+    int currentHealth;
+
     private float nextFireTime;
     protected bool facingRight;
     public GameObject bullet;
@@ -16,7 +19,7 @@ public class Robot_follow : MonoBehaviour
     private Animator anim;
     void Start()
     {
-
+        currentHealth = maxHealth;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         anim = GetComponent<Animator>();
     }
@@ -56,5 +59,23 @@ public class Robot_follow : MonoBehaviour
         scale.x *= -1;
         transform.localScale = scale;
         facingRight = !facingRight;
+    }
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Debug.Log("Enemy died");
+        anim.SetBool("die", true);
+        Destroy(gameObject, 1.2f);
+        this.enabled = false;
+
     }
 }

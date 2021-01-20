@@ -10,13 +10,14 @@ public class Robot_Script : MonoBehaviour
     public float shootingRange;
     public float fireRate = 1;
     public int maxHealth = 100;
+    int currentHealth;
 
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
 
 
-    int currentHealth;
+    
     private float nextFireTime;
     protected bool facingRight;
     public GameObject bullet;
