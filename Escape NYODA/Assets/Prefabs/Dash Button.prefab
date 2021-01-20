@@ -157,5 +157,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2b7234d46b4754cb82c58333da8524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashBoost: 15
-  isUseHealthItem: 0
+  dashBoost: 10

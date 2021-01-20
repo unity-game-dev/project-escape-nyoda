@@ -5,8 +5,8 @@ using UnityEngine;
 public class DashAddButton : MonoBehaviour
 {
     private IgorDash igorDash;
-    public float dashBoost = 15f;
-    public bool isUseHealthItem = false;
+    public float dashBoost = 10f;
+    
     private void Start()
     {
         igorDash = GameObject.FindGameObjectWithTag("Player").GetComponent<IgorDash>();
@@ -16,7 +16,7 @@ public class DashAddButton : MonoBehaviour
     {
         if (igorDash.currentDashTime > 0)
         {
-            isUseHealthItem = true;
+            
             igorDash.currentDashTime += dashBoost;
             Destroy(gameObject);
         }
