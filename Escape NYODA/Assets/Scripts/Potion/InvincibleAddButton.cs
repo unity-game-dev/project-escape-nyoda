@@ -6,7 +6,6 @@ public class InvincibleAddButton : MonoBehaviour
 {
     private IgorInvincible igorInvincible;
     public float invincibleBoost = 5f;
-    public bool isUseHealthItem = false;
     private void Start()
     {
         igorInvincible = GameObject.FindGameObjectWithTag("Player").GetComponent<IgorInvincible>();
@@ -16,7 +15,6 @@ public class InvincibleAddButton : MonoBehaviour
     {
         if (igorInvincible.currentInvincibleTime > 0)
         {
-            isUseHealthItem = true;
             igorInvincible.currentInvincibleTime += invincibleBoost;
             Destroy(gameObject);
         }

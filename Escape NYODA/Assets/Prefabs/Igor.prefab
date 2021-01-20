@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 252821762}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.41, y: 0, z: 0}
+  m_LocalPosition: {x: 0.09, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5910716449504629962}
@@ -203,7 +203,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 891008027
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -6097913492706686566, guid: 76ecaf80fc117c142b6aeb8b6a378cb6,
     type: 3}
@@ -232,7 +232,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 4
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -259,8 +259,7 @@ MonoBehaviour:
     m_Bits: 566
   m_GroundCheck: {fileID: 5910716448522001881}
   m_CeilingCheck: {fileID: 5910716447899877011}
-  m_CrouchDisableCollider: {fileID: 5910716449504629972, guid: 27aa46ac8eb35b04baedc69946f8968d,
-    type: 3}
+  m_CrouchDisableCollider: {fileID: 0}
   m_Rigidbody2D: {fileID: 0}
   m_FacingRight: 1
   OnLandEvent:
@@ -279,18 +278,7 @@ MonoBehaviour:
         m_CallState: 2
   OnCrouchEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5910716449504629961}
-        m_MethodName: OnCrouching
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &5910716449504629961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,6 +299,7 @@ MonoBehaviour:
   whatIsLadder:
     serializedVersion: 2
     m_Bits: 1024
+  igorDash: {fileID: 675545784}
 --- !u!95 &5910716449504629960
 Animator:
   serializedVersion: 3
@@ -348,6 +337,10 @@ MonoBehaviour:
   missilePrefab: {fileID: 6945983988611578037, guid: fd23b8f9146b70547bf1b5a7b03dedd3,
     type: 3}
   armRotation: {fileID: 3272368896046871070}
+  pAmmo: 0
+  sAmmo: 0
+  primaryAmmo: {fileID: 0}
+  secondaryAmmo: {fileID: 0}
 --- !u!114 &1833437026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -361,7 +354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackPoint: {fileID: 252821763}
-  attackRange: 0.5
+  attackRange: 0.93
   enemyLayers:
     serializedVersion: 2
     m_Bits: 2048
@@ -401,6 +394,7 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   healthAddButton: {fileID: 7955412663274789401, guid: 538fcd2beb1fa8349bba819b6c452100,
     type: 3}
+  igorInvincible: {fileID: 675545785}
   healthBoost: 30
 --- !u!114 &675545784
 MonoBehaviour:
@@ -445,8 +439,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.17353155, y: -0.013561249}
-  m_Size: {x: 1.0775652, y: 2.0570755}
+  m_Offset: {x: -0.21499634, y: -0.04897499}
+  m_Size: {x: 0.8619385, y: 1.888897}
   m_Direction: 0
 --- !u!1 &7873381513552544306
 GameObject:
@@ -518,7 +512,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 891008027
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 2
   m_Sprite: {fileID: -5196019793534599069, guid: 46f99ee65bb8424499638d558ce1c903,
     type: 3}
