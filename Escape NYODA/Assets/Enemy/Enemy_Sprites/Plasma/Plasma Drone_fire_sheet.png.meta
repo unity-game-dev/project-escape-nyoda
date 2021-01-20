@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: ad59ad13d45487c4ba3b5a8d0ee68010
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1663889608363507391
+    second: Plasma Drone_fire_sheet_0
+  - first:
+      213: 2008441725443628375
+    second: Plasma Drone_fire_sheet_1
+  - first:
+      213: 5808431387117815441
+    second: Plasma Drone_fire_sheet_2
+  - first:
+      213: 6684613256273487976
+    second: Plasma Drone_fire_sheet_3
+  - first:
+      213: -5749896332077152964
+    second: Plasma Drone_fire_sheet_4
+  - first:
+      213: -4470924405903160074
+    second: Plasma Drone_fire_sheet_5
+  - first:
+      213: 2001659504655427048
+    second: Plasma Drone_fire_sheet_6
+  - first:
+      213: 4322022162159945226
+    second: Plasma Drone_fire_sheet_7
+  - first:
+      213: -1968780657872935233
+    second: Plasma Drone_fire_sheet_8
+  - first:
+      213: 7638996062180311224
+    second: Plasma Drone_fire_sheet_9
+  - first:
+      213: 4930856310524603811
+    second: Plasma Drone_fire_sheet_10
+  - first:
+      213: -5995174476884400910
+    second: Plasma Drone_fire_sheet_11
+  - first:
+      213: -2480935573991957167
+    second: Plasma Drone_fire_sheet_12
+  - first:
+      213: -8503321513658431323
+    second: Plasma Drone_fire_sheet_13
+  - first:
+      213: -3001572371185037061
+    second: Plasma Drone_fire_sheet_14
+  - first:
+      213: 2696014599715526573
+    second: Plasma Drone_fire_sheet_15
+  - first:
+      213: 5459241223981110069
+    second: Plasma Drone_fire_sheet_16
+  - first:
+      213: -7645104417700092597
+    second: Plasma Drone_fire_sheet_17
+  - first:
+      213: -5431884354405134605
+    second: Plasma Drone_fire_sheet_18
+  - first:
+      213: 4632069911862447374
+    second: Plasma Drone_fire_sheet_19
+  - first:
+      213: 158748361906048455
+    second: Plasma Drone_fire_sheet_20
+  - first:
+      213: 6550960456630344466
+    second: Plasma Drone_fire_sheet_21
+  - first:
+      213: -746831935270396736
+    second: Plasma Drone_fire_sheet_22
+  - first:
+      213: 8026136370359717500
+    second: Plasma Drone_fire_sheet_23
+  - first:
+      213: -1281840343133611521
+    second: Plasma Drone_fire_sheet_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Plasma Drone_fire_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 27
+        width: 52
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe78fb78c2571710800000000000000
+      internalID: 1663889608363507391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasma Drone_fire_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 28
+        width: 51
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75dd32dab1b6fdb10800000000000000
+      internalID: 2008441725443628375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasma Drone_fire_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 27
+        width: 54
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196036b7291bb9050800000000000000
+      internalID: 5808431387117815441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasma Drone_fire_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 22
+        width: 55
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8686c09075484cc50800000000000000
+      internalID: 6684613256273487976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasma Drone_fire_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 22
+        width: 56
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35483f00c34430b0800000000000000
+      internalID: -5749896332077152964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasma Drone_fire_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 22
+        width: 56
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc8488d0f514f1c0800000000000000
+      internalID: -4470924405903160074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasma Drone_fire_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 22
+        width: 56
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e56548d6b257cb10800000000000000
+      internalID: 2001659504655427048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasma Drone_fire_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 21
+        width: 55
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06c8e6e148eafb30800000000000000
+      internalID: 4322022162159945226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasma Drone_fire_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 22
+        width: 57
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6e2d63c6c7da4e0800000000000000
+      internalID: -1968780657872935233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasma Drone_fire_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 26
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b08dd6027a230a60800000000000000
+      internalID: 7638996062180311224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasma Drone_fire_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 22
+        width: 56
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3adef4b80bbed6440800000000000000
+      internalID: 4930856310524603811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasma Drone_fire_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 21
+        width: 56
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f421dab39cdccca0800000000000000
+      internalID: -5995174476884400910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasma Drone_fire_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 22
+        width: 57
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d54917d32f19dd0800000000000000
+      internalID: -2480935573991957167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasma Drone_fire_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1697
+        y: 22
+        width: 56
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a8c377c2222ef980800000000000000
+      internalID: -8503321513658431323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasma Drone_fire_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 22
+        width: 59
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf093e7d4d54856d0800000000000000
+      internalID: -3001572371185037061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasma Drone_fire_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 21
+        width: 56
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da79f4d8efa2a6520800000000000000
+      internalID: 2696014599715526573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasma Drone_fire_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2058
+        y: 4
+        width: 80
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533109a08fe13cb40800000000000000
+      internalID: 5459241223981110069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasma Drone_fire_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2180
+        y: 3
+        width: 84
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b456730a90227e590800000000000000
+      internalID: -7645104417700092597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasma Drone_fire_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2333
+        y: 22
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe0ea285f11e94b0800000000000000
+      internalID: -5431884354405134605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plasma Drone_fire_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2467
+        y: 24
+        width: 54
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d06570b0b684040800000000000000
+      internalID: 4632069911862447374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
