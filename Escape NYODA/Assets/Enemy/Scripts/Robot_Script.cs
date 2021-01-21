@@ -24,6 +24,8 @@ public class Robot_Script : MonoBehaviour
     public GameObject bulletParent;
     private Transform player;
     private Animator anim;
+
+    public GameObject priAmmo;
     void Start()
     {
         currentHealth = maxHealth;
@@ -62,14 +64,19 @@ public class Robot_Script : MonoBehaviour
         {
             //Debug.Log(hitInfo.name);
             IgorHealth enemy = hitInfo.GetComponent<IgorHealth>();
+            IgorInvincible enemyInvincible = hitInfo.GetComponent<IgorInvincible>();
+
             if (enemy != null)
             {
-                enemy.TakeDamage(10);
+                if(enemyInvincible.currentInvincibleTime > 0)
+                {
+                    enemy.TakeDamage(0);
+                } else
+                {
+                    enemy.TakeDamage(10);
+                }
             }
-
-
         }
-
     }
     private void OnDrawGizmosSelected()
     {
@@ -104,6 +111,7 @@ public class Robot_Script : MonoBehaviour
     {
         Debug.Log("Enemy died");
         anim.SetBool("die", true);
+        Instantiate(priAmmo, gameObject.transform.position, Quaternion.identity);
         Destroy(gameObject,2f);
         this.enabled = false;
 

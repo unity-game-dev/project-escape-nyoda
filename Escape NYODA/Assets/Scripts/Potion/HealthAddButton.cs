@@ -7,6 +7,9 @@ public class HealthAddButton : MonoBehaviour
 {
     private IgorHealth igorHealth;
     public int healthBoost = 30;
+    public GameObject healthEffect;
+    private Transform player;
+
     //public delegate void HPIncrease();
     //public static event HPIncrease hpIncrease;
     //public UnityEvent buttonClick;
@@ -15,6 +18,7 @@ public class HealthAddButton : MonoBehaviour
     private void Start()
     {
         igorHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<IgorHealth>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     public void Use()
@@ -23,6 +27,7 @@ public class HealthAddButton : MonoBehaviour
         {
              igorHealth.currentHealth += healthBoost;
              Destroy(gameObject);
+             Instantiate(healthEffect, player.position, Quaternion.identity);
         }
         Debug.Log("HealthButtonisInUse");
         

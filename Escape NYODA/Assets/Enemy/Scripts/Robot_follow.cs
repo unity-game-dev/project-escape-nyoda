@@ -17,6 +17,8 @@ public class Robot_follow : MonoBehaviour
     public GameObject bulletParent;
     private Transform player;
     private Animator anim;
+
+    public GameObject secAmmo;
     void Start()
     {
         currentHealth = maxHealth;
@@ -74,7 +76,9 @@ public class Robot_follow : MonoBehaviour
     {
         Debug.Log("Enemy died");
         anim.SetBool("die", true);
+        Instantiate(secAmmo, gameObject.transform.position, Quaternion.identity);
         Destroy(gameObject, 1.2f);
+        
         this.enabled = false;
 
     }

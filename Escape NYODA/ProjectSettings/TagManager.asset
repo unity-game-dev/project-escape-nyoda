@@ -12,6 +12,10 @@ TagManager:
   - Robot
   - Guard
   - BasicBullet
+  - orangeObstacle
+  - redObstacle
+  - bossObstacle
+  - Gem
   layers:
   - Default
   - TransparentFX
@@ -26,8 +30,8 @@ TagManager:
   - Ladder
   - Enemy
   - Projectile
-  - 
-  - 
+  - EnemyTriggerArea
+  - Room
   - 
   - 
   - 

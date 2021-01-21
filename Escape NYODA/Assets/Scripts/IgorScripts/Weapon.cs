@@ -34,12 +34,14 @@ public class Weapon : MonoBehaviour
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             pAmmo--;
             primaryAmmo.text = pAmmo.ToString();
+            CinemachineShake.Instance.ShakeCamera(3f, 0.1f);
         }
         if(armRotation.isSecondary == true && sAmmo >0)
         {
             Instantiate(missilePrefab, firePoint.position, firePoint.rotation);
             sAmmo--;
             secondaryAmmo.text = sAmmo.ToString();
+            CinemachineShake.Instance.ShakeCamera(10f, 0.2f);
         }
     }
 

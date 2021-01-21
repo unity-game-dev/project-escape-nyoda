@@ -141,6 +141,7 @@ GameObject:
   - component: {fileID: 675545784}
   - component: {fileID: 675545785}
   - component: {fileID: 675545776}
+  - component: {fileID: 2009651027}
   m_Layer: 8
   m_Name: Igor
   m_TagString: Player
@@ -203,9 +204,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 891008027
-  m_SortingLayer: 5
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -6097913492706686566, guid: 76ecaf80fc117c142b6aeb8b6a378cb6,
+  m_SortingLayer: 6
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 6840392713581683381, guid: 76ecaf80fc117c142b6aeb8b6a378cb6,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -260,6 +261,7 @@ MonoBehaviour:
   m_GroundCheck: {fileID: 5910716448522001881}
   m_CeilingCheck: {fileID: 5910716447899877011}
   m_CrouchDisableCollider: {fileID: 0}
+  m_Grounded: 0
   m_Rigidbody2D: {fileID: 0}
   m_FacingRight: 1
   OnLandEvent:
@@ -360,6 +362,8 @@ MonoBehaviour:
     m_Bits: 2048
   attackRate: 2
   armRotation: {fileID: 3272368896046871070}
+  attackDamage: 10
+  anim: {fileID: 5910716449504629960}
 --- !u!114 &1833437034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,13 +393,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7821eddd944af1146bc0d4d442f96558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 1000
   currentHealth: 0
   healthBar: {fileID: 0}
   healthAddButton: {fileID: 7955412663274789401, guid: 538fcd2beb1fa8349bba819b6c452100,
     type: 3}
   igorInvincible: {fileID: 675545785}
   healthBoost: 30
+  anim: {fileID: 5910716449504629960}
+  healthText: {fileID: 0}
 --- !u!114 &675545784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,8 +414,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a64aaff6623d88429f9a712b2e5cbfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDashTime: 45
+  maxDashTime: 30
   currentDashTime: 0
+  dashText: {fileID: 0}
   dashBar: {fileID: 0}
 --- !u!114 &675545785
 MonoBehaviour:
@@ -423,9 +430,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f306496b290692b41a1a30f5b0362642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxInvincibleTime: 30
+  maxInvincibleTime: 15
   currentInvincibleTime: 0
   invincibleBar: {fileID: 0}
+  invincibleText: {fileID: 0}
 --- !u!70 &675545776
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -442,6 +450,20 @@ CapsuleCollider2D:
   m_Offset: {x: -0.21499634, y: -0.04897499}
   m_Size: {x: 0.8619385, y: 1.888897}
   m_Direction: 0
+--- !u!114 &2009651027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5910716449504629968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c568b1df78df74b97833dfd00ef7d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gemCount: 0
+  count: {fileID: 0}
 --- !u!1 &7873381513552544306
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,7 +490,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7873381513552544306}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.273, y: 0.059, z: 0}
+  m_LocalPosition: {x: 0.09, y: 0.059, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5910716447903175068}
@@ -512,7 +534,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 891008027
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 2
   m_Sprite: {fileID: -5196019793534599069, guid: 46f99ee65bb8424499638d558ce1c903,
     type: 3}

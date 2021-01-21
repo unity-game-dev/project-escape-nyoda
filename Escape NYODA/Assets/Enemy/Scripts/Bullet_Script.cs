@@ -19,10 +19,17 @@ public class Bullet_Script : MonoBehaviour
     {
         Debug.Log(hitInfo.name);
         //***//
+        IgorInvincible enemyInvincible = hitInfo.GetComponent<IgorInvincible>();
         IgorHealth enemy = hitInfo.GetComponent<IgorHealth>();
         if (enemy != null)
         {
-            enemy.TakeDamage(15);
+            if(enemyInvincible.currentInvincibleTime > 0)
+            {
+                enemy.TakeDamage(0);
+            } else
+            {
+                enemy.TakeDamage(15);
+            }
         }
         //***//
         Destroy(gameObject);

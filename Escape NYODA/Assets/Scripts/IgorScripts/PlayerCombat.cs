@@ -10,8 +10,8 @@ public class PlayerCombat : MonoBehaviour
     public float attackRate = 2f;
     float nextAttackTime = 0f;
     public ArmRotation armRotation;
-
-
+    public int attackDamage = 10;
+    public Animator anim;
    
 
 
@@ -25,6 +25,7 @@ public class PlayerCombat : MonoBehaviour
             {
                 Attack();
                 nextAttackTime = Time.time + 1f / attackRate;
+                
             }
         }
         
@@ -35,13 +36,22 @@ public class PlayerCombat : MonoBehaviour
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
         foreach(Collider2D enemy in hitEnemies)
         {
-            Debug.Log(enemy.name);
-
-
-           
-
-
+            //Debug.Log(enemy.name);
+            if(enemy.tag == "Plasma")
+            {
+                enemy.GetComponent<Robot_follow>().TakeDamage(attackDamage);
+            }
+            if (enemy.tag == "Robot")
+            {
+                enemy.GetComponent<Robot_Script>().TakeDamage(attackDamage);
+            }
+            if (enemy.tag == "Guard")
+            {
+                enemy.GetComponent<Guard_behaviour>().TakeDamage(attackDamage);
+            }
         }
+        anim.SetTrigger("Combat");
+        CinemachineShake.Instance.ShakeCamera(3f, 0.1f);
     }
     private void OnDrawGizmosSelected()
     {

@@ -7,10 +7,13 @@ public class Bullet : MonoBehaviour
     public float speed = 20f;
     public Rigidbody2D rb;
 
+    public GameObject orangeObstacle;
+    public bool isDestroyed = false;
     //****//
     public GameObject guard;
     public int attackDamage = 50;
     //***//
+    public GameObject bulletImpact;
     private void Start()
     {
         rb.velocity = transform.right * speed;
@@ -50,6 +53,14 @@ public class Bullet : MonoBehaviour
 
         }
         //***//
+        if (hitInfo.tag == "orangeObstacle")
+        {
+            orangeObstacle = GameObject.FindGameObjectWithTag("orangeObstacle");
+            Destroy(orangeObstacle);
+        }
+        Debug.Log(hitInfo.name);
+        Instantiate(bulletImpact, transform.position, transform.rotation);
         Destroy(gameObject);
+        isDestroyed = true;
     }
 }
