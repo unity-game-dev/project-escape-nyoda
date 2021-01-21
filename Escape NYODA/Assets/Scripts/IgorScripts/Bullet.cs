@@ -6,16 +6,20 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 20f;
     public Rigidbody2D rb;
+
     //****//
+    public GameObject guard;
     public int attackDamage = 50;
     //***//
     private void Start()
     {
         rb.velocity = transform.right * speed;
+        guard = GameObject.FindGameObjectWithTag("Guard");
     }
 
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
+        //Debug.Log(hitInfo.tag);
         //***//
         if(hitInfo.tag == "Robot")
         {
@@ -37,9 +41,10 @@ public class Bullet : MonoBehaviour
         }
         else if (hitInfo.tag == "Guard")
         {
-            Guard_behaviour enemy = hitInfo.GetComponent<Guard_behaviour>();
+            Guard_behaviour enemy = guard.GetComponent<Guard_behaviour>();
             if (enemy != null)
             {
+                Debug.Log(enemy);
                 enemy.TakeDamage(attackDamage);
             }
 

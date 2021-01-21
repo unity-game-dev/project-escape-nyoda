@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6847066571344856}
   m_Layer: 12
   m_Name: BasicBullet
-  m_TagString: Untagged
+  m_TagString: BasicBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 891008027
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -3854413578245809937, guid: 46f99ee65bb8424499638d558ce1c903,
     type: 3}
@@ -146,3 +146,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   rb: {fileID: 7002382506876450240}
+  attackDamage: 50
