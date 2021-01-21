@@ -11,6 +11,7 @@ TagManager:
   - Plasma
   - Robot
   - Guard
+  - BasicBullet
   - orangeObstacle
   - redObstacle
   - bossObstacle
