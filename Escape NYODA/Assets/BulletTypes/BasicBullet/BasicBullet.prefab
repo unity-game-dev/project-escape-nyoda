@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7466271442304985257}
   - component: {fileID: 7002382506876450240}
   - component: {fileID: 6847066571344856}
+  - component: {fileID: 1100040091252093253}
   m_Layer: 12
   m_Name: BasicBullet
   m_TagString: Untagged
@@ -71,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 891008027
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -3854413578245809937, guid: 46f99ee65bb8424499638d558ce1c903,
     type: 3}
@@ -146,3 +147,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   rb: {fileID: 7002382506876450240}
+  orangeObstacle: {fileID: 0}
+  isDestroyed: 0
+  attackDamage: 50
+  bulletImpact: {fileID: 420766790105442591, guid: 48501b1c9cae3fc48a376e3e1d00cdc9,
+    type: 3}
+--- !u!114 &1100040091252093253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4996918856402922413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 113f047270c88764486e18b4c8fa1861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBtwSpawns: 0
+  startTimeBtwSpawns: 0.05
+  basicBulletFade: {fileID: 2706638681586444543, guid: a5277ec6332b49742afb0753510a2662,
+    type: 3}

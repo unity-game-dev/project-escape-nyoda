@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8789324319325068083}
   m_Layer: 11
   m_Name: Plasma
-  m_TagString: Untagged
+  m_TagString: Plasma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 891008027
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -5556041497310905594, guid: ea272630c1f1c154b8a9422fab359468,
     type: 3}
@@ -102,8 +102,10 @@ MonoBehaviour:
   lineOfSite: 4.17
   shootingRange: 2.96
   fireRate: 1
+  maxHealth: 100
   bullet: {fileID: 7395892910085870760, guid: f504d11486d471342a54dc3651e7e7df, type: 3}
   bulletParent: {fileID: 8789324319578307039}
+  secAmmo: {fileID: 4195413144619151310, guid: 4f134b80bf77b1e408b12c51c0b3c8b7, type: 3}
 --- !u!61 &8789324319325068082
 BoxCollider2D:
   m_ObjectHideFlags: 0

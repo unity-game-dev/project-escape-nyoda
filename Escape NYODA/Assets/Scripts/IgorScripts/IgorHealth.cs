@@ -14,6 +14,7 @@ public class IgorHealth : MonoBehaviour
     public HealthAddButton healthAddButton;
     public IgorInvincible igorInvincible;
     public int healthBoost = 30;
+    public Animator anim;
     //public Button button;
     public Text healthText;
     // Start is called before the first frame update
@@ -34,17 +35,7 @@ public class IgorHealth : MonoBehaviour
                
                 TakeDamage(0);
                 
-            } else
-            {
-                if (Input.GetKeyDown(KeyCode.Q))
-                {
-                    TakeDamage(10);
-                }
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            AddHealth();
+            } 
         }
     }
 
@@ -53,24 +44,16 @@ public class IgorHealth : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+        if (currentHealth <= 0)
+        {
+            igorDead();
+        }
     }
 
-    void AddHealth()
+    public void igorDead()
     {
-        currentHealth += healthBoost;
-        healthBar.SetHealth(currentHealth);    
+        anim.SetBool("IsDead", true);
+        Destroy(gameObject, 1.2f);
+        this.enabled = false;
     }
-    /*void OnEnable()
-    {
-        HealthAddButton .hpIncrease += UsedIsClicked;
-    }
-    void OnDisable()
-    {
-        HealthAddButton .hpIncrease -= UsedIsClicked;
-    }
-
-    void UsedIsClicked()
-    {
-        healthBar.SetHealth(currentHealth);
-    }*/
 }

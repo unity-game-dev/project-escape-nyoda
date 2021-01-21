@@ -85,6 +85,7 @@ public class Guard_behaviour : MonoBehaviour
             inRange = true;
             Flip();
         }
+        Debug.Log(trig.name);
     }
 
     void EnemyLogic()

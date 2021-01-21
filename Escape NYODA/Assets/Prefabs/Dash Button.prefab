@@ -158,3 +158,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dashBoost: 10
+  dashEffect: {fileID: 1537865719367518708, guid: cd0ca5d5882113d4ea89a377e25d204c,
+    type: 3}

@@ -8,12 +8,15 @@ public class PlayerMovement : MonoBehaviour {
 	public Animator anim;
 
 	public float runSpeed = 40f;
-	public float climbSpeed = 30f;
+	public float climbSpeed = 5f;
 
 	float horizontalMove = 0f;
 	bool jump = false;
 	bool crouch = false;
-
+	float fJumpPressedRemember = 0;
+	float fJumpPressedRememberTime = 2f;
+	float fGroundedRemember = 0;
+	float fGroundedRememberTime = 2f;
 	public float distance;
 	public LayerMask whatIsLadder;
 	private float inputVertical;
@@ -26,14 +29,28 @@ public class PlayerMovement : MonoBehaviour {
 		if (igorDash.currentDashTime > 0f)
 		{
 			runSpeed = 80f;
+			climbSpeed = 10f;
 		} else
 		{
 			runSpeed = 40f;
+			climbSpeed = 5f;
 		}
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 		anim.SetFloat("Speed", Mathf.Abs(horizontalMove));
+		fGroundedRemember -= Time.deltaTime;
+		if (controller.m_Grounded)
+		{
+			fGroundedRemember = fGroundedRememberTime;
+		}
+		fJumpPressedRemember = -Time.deltaTime;
 		if (Input.GetButtonDown("Jump"))
 		{
+			fJumpPressedRemember = fJumpPressedRememberTime;
+		}
+		if ((fJumpPressedRemember > 0) && (fGroundedRemember > 0))
+		{
+			fJumpPressedRemember = 0;
+			fGroundedRemember = 0;
 			jump = true;
 			anim.SetBool("IsJumping", true);
 		}
