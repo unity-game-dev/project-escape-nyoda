@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1100040091252093253}
   m_Layer: 12
   m_Name: BasicBullet
-  m_TagString: Untagged
+  m_TagString: BasicBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -147,6 +147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   rb: {fileID: 7002382506876450240}
+  attackDamage: 50
   orangeObstacle: {fileID: 0}
   isDestroyed: 0
   attackDamage: 50

@@ -105,12 +105,14 @@ public class Guard_behaviour : MonoBehaviour
         {
             Cooldown();
             anim.SetBool("attack1", false);
+            
         }
     }
 
     void Move()
     {
         anim.SetBool("canWalk", true);
+        
         if (!anim.GetCurrentAnimatorStateInfo(0).IsName("guard_attack1"))
         {
             Vector2 targetPosition = new Vector2(target.position.x, transform.position.y);
@@ -125,6 +127,7 @@ public class Guard_behaviour : MonoBehaviour
         attackMode = true;
         anim.SetBool("canWalk", false);
         anim.SetBool("attack1", true);
+
     }
 
     void Cooldown()
@@ -197,9 +200,10 @@ public class Guard_behaviour : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        Debug.Log(damage);
+        
         currentHealth -= damage;
-
+        
+        
         if (currentHealth <= 0)
         {
             Die();
@@ -208,9 +212,9 @@ public class Guard_behaviour : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("Enemy died");
-        //anim.SetBool("die", true);
-        Destroy(gameObject, 2f);
+        
+        anim.SetBool("die", true);
+        Destroy(gameObject, 1.5f);
         this.enabled = false;
 
     }
