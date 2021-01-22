@@ -17,24 +17,31 @@ public class Bullet_Script : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        Debug.Log(hitInfo.name);
+        
         //***//
-        IgorInvincible enemyInvincible = hitInfo.GetComponent<IgorInvincible>();
-        IgorHealth enemy = hitInfo.GetComponent<IgorHealth>();
-        if (enemy != null)
+        if (hitInfo.name == "Igor")
         {
-            if(enemyInvincible.currentInvincibleTime > 0)
+            IgorInvincible enemyInvincible = hitInfo.GetComponent<IgorInvincible>();
+            IgorHealth enemy = hitInfo.GetComponent<IgorHealth>();
+            if (enemy != null)
             {
-                enemy.TakeDamage(0);
-            } else
-            {
-                enemy.TakeDamage(15);
+                if (enemyInvincible.currentInvincibleTime > 0)
+                {
+                    enemy.TakeDamage(0);
+                }
+                else
+                {
+                    enemy.TakeDamage(15);
+                }
             }
+            //***//
+            Destroy(gameObject);
+
         }
-        //***//
-        Destroy(gameObject);
-        
-        
+        else if (hitInfo.name == "Ground" || hitInfo.name == "Boundary")
+        {
+            Destroy(gameObject);
+        }
     }
 
 
