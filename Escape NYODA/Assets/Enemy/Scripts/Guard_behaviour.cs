@@ -15,12 +15,18 @@ public class Guard_behaviour : MonoBehaviour
     public Transform leftLimit;
     public Transform rightLimit; 
     public int maxHealth = 200;
-    int currentHealth;
+    public int currentHealth;
+    public GameObject bullet;
+    public GameObject bulletParent;
+    public float shootingRange;
+    public float fireRate = 1;
     #endregion
 
     #region Private Variables
     private RaycastHit2D hit;
+    private float nextFireTime;
     private Transform target;
+    private Transform player;
     private Animator anim;
     private float distance;
     private bool attackMode;
@@ -34,6 +40,7 @@ public class Guard_behaviour : MonoBehaviour
     private void Start()
     {
         currentHealth = maxHealth;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
     void Awake()
     {
@@ -46,6 +53,14 @@ public class Guard_behaviour : MonoBehaviour
 
     void Update()
     {
+        float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
+
+        if (distanceFromPlayer <= shootingRange && nextFireTime < Time.time)
+        {
+            Instantiate(bullet, bulletParent.transform.position, Quaternion.identity);
+            Debug.Log("Bullet");
+            nextFireTime = Time.time + fireRate;
+        }
         if (!attackMode)
         {
             Move();
@@ -75,6 +90,8 @@ public class Guard_behaviour : MonoBehaviour
             
             StopAttack();
         }
+
+        
     }
 
     void OnTriggerEnter2D(Collider2D trig)
@@ -209,7 +226,11 @@ public class Guard_behaviour : MonoBehaviour
             Die();
         }
     }
-
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, shootingRange);
+    }
     void Die()
     {
         
