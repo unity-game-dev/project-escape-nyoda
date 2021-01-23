@@ -23,7 +23,7 @@ public class GemCount : MonoBehaviour
         {
             Destroy(other.gameObject);
             gemCount++;
-            
+            Debug.Log(gemCount);
         }
     }
 }

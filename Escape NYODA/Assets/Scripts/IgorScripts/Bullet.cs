@@ -14,6 +14,7 @@ public class Bullet : MonoBehaviour
     public int attackDamage = 50;
     //***//
     public GameObject bulletImpact;
+    public GameObject bulletParticleImpact;
     private void Start()
     {
         rb.velocity = transform.right * speed;
@@ -60,6 +61,7 @@ public class Bullet : MonoBehaviour
         }
         Debug.Log(hitInfo.name);
         Instantiate(bulletImpact, transform.position, transform.rotation);
+        Instantiate(bulletParticleImpact, transform.position, transform.rotation);
         Destroy(gameObject);
         isDestroyed = true;
     }

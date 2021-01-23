@@ -9,6 +9,7 @@ public class Missile : MonoBehaviour
     public GameObject redObstacle;
     public int attackDamage = 100;
     public GameObject missileImpact;
+    public GameObject missileParticleImpact;
     private void Start()
     {
         rb.velocity = transform.right * speed;
@@ -50,6 +51,9 @@ public class Missile : MonoBehaviour
             Destroy(gameObject);
         }
         Instantiate(missileImpact, transform.position, transform.rotation);
+        Instantiate(missileParticleImpact, transform.position, transform.rotation);
         Destroy(gameObject);
+        AudioManager.instance.Play("MissileExplosion");
+        CinemachineShake.Instance.ShakeCamera(10f, 0.2f);
     }
 }

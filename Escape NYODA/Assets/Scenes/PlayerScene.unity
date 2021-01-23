@@ -1156,6 +1156,15 @@ MonoBehaviour:
     loop: 1
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
+  - name: MissileExplosion
+    clip: {fileID: 8300000, guid: 5476a10a1abce3d4b8d13a090f296bf6, type: 3}
+    volume: 0.526
+    volumeVariance: 0
+    pitch: 1.4
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
 --- !u!4 &399716192
 Transform:
   m_ObjectHideFlags: 0
@@ -1464,6 +1473,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 459706566}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &496790897 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 819004054952143494, guid: d821a06a990b7cf44839c6981e9d09d2,
+    type: 3}
+  m_PrefabInstance: {fileID: 819004053826751958}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &518901093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3284,39 +3305,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 444684531}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1156851536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: bcb75c7a9f49cb045a00719336014854, type: 3}
-    m_FontSize: 150
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 150
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: 0
 --- !u!1001 &1171898919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7323,7 +7311,7 @@ PrefabInstance:
     - target: {fileID: 2009651027, guid: 27aa46ac8eb35b04baedc69946f8968d, type: 3}
       propertyPath: count
       value: 
-      objectReference: {fileID: 1156851536}
+      objectReference: {fileID: 496790897}
     - target: {fileID: 5910716449504629961, guid: 27aa46ac8eb35b04baedc69946f8968d,
         type: 3}
       propertyPath: audioManager
