@@ -13,14 +13,17 @@ public class GemCount : MonoBehaviour
     {
         rb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
     }
-
+    private void Update()
+    {
+        count.text = gemCount.ToString();
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Gem")
         {
             Destroy(other.gameObject);
             gemCount++;
-            count.text = gemCount.ToString();
+            
         }
     }
 }
