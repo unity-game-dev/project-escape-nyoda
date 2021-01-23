@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour {
 	public float distance;
 	public LayerMask whatIsLadder;
 	private float inputVertical;
+	private bool isWalking;
 
 	private bool isClimbing;
 	//private bool isDash;
@@ -37,6 +38,14 @@ public class PlayerMovement : MonoBehaviour {
 		}
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 		anim.SetFloat("Speed", Mathf.Abs(horizontalMove));
+		if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
+		{
+				AudioManager.instance.Play("characWalk");
+		} else if(Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
+		{
+			AudioManager.instance.StopPlaying("characWalk");
+		}
+
 		fGroundedRemember -= Time.deltaTime;
 		if (controller.m_Grounded)
 		{
@@ -55,6 +64,10 @@ public class PlayerMovement : MonoBehaviour {
 			anim.SetBool("IsJumping", true);
 		}
 
+		if(jump == true)
+		{
+			AudioManager.instance.Play("characJump");
+		}
 		if (Input.GetButtonDown("Crouch"))
 		{
 			crouch = true;

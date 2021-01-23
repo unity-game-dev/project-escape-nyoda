@@ -25,7 +25,7 @@ public class PlayerCombat : MonoBehaviour
             {
                 Attack();
                 nextAttackTime = Time.time + 1f / attackRate;
-                
+                AudioManager.instance.Play("Knife");
             }
         }
         
