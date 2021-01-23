@@ -151,6 +151,8 @@ MonoBehaviour:
   attackDamage: 100
   missileImpact: {fileID: 2804459614331230323, guid: 65439b0d961f76841bd3dfe85ddce764,
     type: 3}
+  missileParticleImpact: {fileID: 7726086736848185832, guid: 2ef8186df901a944fb0fa4811b6de1a1,
+    type: 3}
 --- !u!96 &6774593757861301739
 TrailRenderer:
   serializedVersion: 2

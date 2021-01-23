@@ -35,7 +35,7 @@ public class Weapon : MonoBehaviour
             pAmmo--;
             primaryAmmo.text = pAmmo.ToString();
             AudioManager.instance.Play("Gun");
-            CinemachineShake.Instance.ShakeCamera(6f, 0.1f);
+            CinemachineShake.Instance.ShakeCamera(3f, 0.1f);
         }
         else if(armRotation.isSecondary == true && sAmmo >0)
         {

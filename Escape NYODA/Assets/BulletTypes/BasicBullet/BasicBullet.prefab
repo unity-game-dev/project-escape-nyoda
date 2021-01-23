@@ -147,11 +147,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   rb: {fileID: 7002382506876450240}
-  attackDamage: 50
   orangeObstacle: {fileID: 0}
   isDestroyed: 0
+  guard: {fileID: 0}
   attackDamage: 50
   bulletImpact: {fileID: 420766790105442591, guid: 48501b1c9cae3fc48a376e3e1d00cdc9,
+    type: 3}
+  bulletParticleImpact: {fileID: 4066851649549460293, guid: 78f11539e4a0e3347a3282b784339370,
     type: 3}
 --- !u!114 &1100040091252093253
 MonoBehaviour:
