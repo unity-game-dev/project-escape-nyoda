@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8161955503838303682
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8161955503838303740}
+  - component: {fileID: 8161955503838303683}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8161955503838303740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8161955503838303682}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8161955503838303683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8161955503838303682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82efce58dd3dea4d8757f1b6ce6fef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixerGroup: {fileID: 0}
+  sounds:
+  - name: characWalk
+    clip: {fileID: 8300000, guid: f2e61aefecd717c48822c744d45001b5, type: 3}
+    volume: 0.209
+    volumeVariance: 0
+    pitch: 1.4
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: characJump
+    clip: {fileID: 8300000, guid: 7a1ecf965357bfe41b48acf1a37b95c9, type: 3}
+    volume: 0.209
+    volumeVariance: 0
+    pitch: 1.4
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Gun
+    clip: {fileID: 8300000, guid: 6aa75ee0f9f0b4049bdea66faab4fa77, type: 3}
+    volume: 0.526
+    volumeVariance: 0
+    pitch: 1.4
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Missile
+    clip: {fileID: 8300000, guid: b8946d6cc6f75fd47b79298a663a18c7, type: 3}
+    volume: 0.526
+    volumeVariance: 0
+    pitch: 1.4
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Knife
+    clip: {fileID: 8300000, guid: d61a8d3647335e840ac4dba7342eb89b, type: 3}
+    volume: 0.526
+    volumeVariance: 0
+    pitch: 1.4
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: BgMusic
+    clip: {fileID: 8300000, guid: 872061ce9f21e624c9b25a0c73c6fe0d, type: 3}
+    volume: 0.526
+    volumeVariance: 0
+    pitch: 1.4
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: MissileExplosion
+    clip: {fileID: 8300000, guid: 5476a10a1abce3d4b8d13a090f296bf6, type: 3}
+    volume: 0.526
+    volumeVariance: 0
+    pitch: 1.4
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}

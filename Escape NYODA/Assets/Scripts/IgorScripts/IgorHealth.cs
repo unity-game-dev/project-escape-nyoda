@@ -37,6 +37,10 @@ public class IgorHealth : MonoBehaviour
                 
             } 
         }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            TakeDamage(100);
+        }
     }
 
     //****  CHANGED TAKEDAMAGE TO PUBLIC ***///
@@ -47,6 +51,7 @@ public class IgorHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             igorDead();
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 
@@ -54,6 +59,6 @@ public class IgorHealth : MonoBehaviour
     {
         anim.SetBool("IsDead", true);
         Destroy(gameObject, 1.2f);
-        this.enabled = false;
+        //this.enabled = false;
     }
 }
