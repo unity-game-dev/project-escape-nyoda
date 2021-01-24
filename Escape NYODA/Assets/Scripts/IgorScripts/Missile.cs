@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Missile : MonoBehaviour
 {
-    public float speed = 5f;
+    public float speed = 15f;
     public Rigidbody2D rb;
     public GameObject redObstacle;
     public int attackDamage = 100;

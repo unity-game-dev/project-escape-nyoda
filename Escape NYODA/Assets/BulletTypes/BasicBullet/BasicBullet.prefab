@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 113f047270c88764486e18b4c8fa1861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBtwSpawns: 0
+  timeBtwSpawns: 0.3
   startTimeBtwSpawns: 0.05
   basicBulletFade: {fileID: 2706638681586444543, guid: a5277ec6332b49742afb0753510a2662,
     type: 3}
