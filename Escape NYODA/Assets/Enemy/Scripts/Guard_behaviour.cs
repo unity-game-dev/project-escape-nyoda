@@ -129,7 +129,7 @@ public class Guard_behaviour : MonoBehaviour
     void Move()
     {
         anim.SetBool("canWalk", true);
-        
+        //AudioManager.instance.Play("Guard_walk");
         if (!anim.GetCurrentAnimatorStateInfo(0).IsName("guard_attack1"))
         {
             Vector2 targetPosition = new Vector2(target.position.x, transform.position.y);
@@ -142,6 +142,7 @@ public class Guard_behaviour : MonoBehaviour
 
         timer = intTimer;
         attackMode = true;
+        //AudioManager.instance.StopPlaying("Guard_walk");
         anim.SetBool("canWalk", false);
         anim.SetBool("attack1", true);
 

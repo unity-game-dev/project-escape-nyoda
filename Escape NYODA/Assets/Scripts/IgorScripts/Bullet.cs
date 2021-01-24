@@ -60,9 +60,12 @@ public class Bullet : MonoBehaviour
             Destroy(orangeObstacle);
         }
         Debug.Log(hitInfo.name);
-        Instantiate(bulletImpact, transform.position, transform.rotation);
-        Instantiate(bulletParticleImpact, transform.position, transform.rotation);
-        Destroy(gameObject);
-        isDestroyed = true;
+        if (hitInfo.name != "attack_collider" || hitInfo.name != "triggerArea" || hitInfo.name != "hit_box") 
+        {
+            Instantiate(bulletImpact, transform.position, transform.rotation);
+            Instantiate(bulletParticleImpact, transform.position, transform.rotation);
+            Destroy(gameObject);
+            isDestroyed = true;
+        }
     }
 }
