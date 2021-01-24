@@ -19,6 +19,10 @@ public class PlayerCombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Time.timeScale == 0)
+        {
+            return;
+        }
         if (Time.time >= nextAttackTime)
         {
             if (Input.GetKeyDown(KeyCode.Space) && armRotation.isKnife == true)

@@ -10,6 +10,10 @@ public class TelePortation : MonoBehaviour
 
     private void Update()
     {
+        if(Time.timeScale == 0)
+        {
+            return;
+        }
         if(Input.GetKeyDown(KeyCode.E) && (canTeleport))
         {
             StartCoroutine(Teleport());
