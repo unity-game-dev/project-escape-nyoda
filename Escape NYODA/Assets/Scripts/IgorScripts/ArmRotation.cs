@@ -22,6 +22,10 @@ public class ArmRotation : MonoBehaviour
     }
     void Update()
     {
+        if(Time.timeScale == 0)
+        {
+            return;
+        }
         if (controller.m_FacingRight)
         {
             whenFacingRight();

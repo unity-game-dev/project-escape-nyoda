@@ -27,6 +27,10 @@ public class PlayerMovement : MonoBehaviour {
 	public IgorDash igorDash;
 	// Update is called once per frame
 	void Update () {
+		if (Time.timeScale == 0)
+		{
+			return;
+		}
 		if (igorDash.currentDashTime > 0f)
 		{
 			runSpeed = 80f;
@@ -90,6 +94,10 @@ public class PlayerMovement : MonoBehaviour {
 
 	void FixedUpdate ()
 	{
+		if(Time.timeScale == 0)
+		{
+			return;
+		}
 		// Move our character
 		controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
 		jump = false;
