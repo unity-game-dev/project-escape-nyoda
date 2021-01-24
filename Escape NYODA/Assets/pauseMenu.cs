@@ -26,15 +26,7 @@ public class pauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale=1f;
         GameIsPaused=false;
-        
-        if((SceneManager.GetActiveScene().name=="PlayerScene")){
-            Debug.Log((SceneManager.GetActiveScene().name=="PlayerScene"));
-                AudioManager.instance.Play("BgMusic");
 
-        }
-        else{
-                     AudioManager.instance.StopPlaying("BgMusic");
-        }
       
     }
     void Pause(){
