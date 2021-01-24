@@ -33,11 +33,13 @@ public class Robot_follow : MonoBehaviour
         if(distanceFromPlayer < lineOfSite && distanceFromPlayer>shootingRange)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, player.position, speed * Time.deltaTime);
+            AudioManager.instance.StopPlaying("Charge");
             anim.SetBool("Attack", false);
         }
         else if (distanceFromPlayer <= shootingRange && nextFireTime < Time.time)
         {
             Instantiate(bullet, bulletParent.transform.position, Quaternion.identity);
+            AudioManager.instance.Play("Charge");
             anim.SetBool("Attack", true);
             nextFireTime = Time.time + fireRate;
         }

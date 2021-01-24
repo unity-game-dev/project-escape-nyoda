@@ -40,11 +40,13 @@ public class Robot_Script : MonoBehaviour
         if (distanceFromPlayer < lineOfSite && distanceFromPlayer > shootingRange)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, player.position, speed * Time.deltaTime);
+            AudioManager.instance.StopPlaying("Laser");
             anim.SetBool("Attack", false);
         }
         else if (distanceFromPlayer <= shootingRange && nextFireTime < Time.time)
         {
             //Instantiate(bullet, bulletParent.transform.position, Quaternion.identity);
+            AudioManager.instance.Play("Laser");
             anim.SetBool("Attack", true);
             Attack();
             nextFireTime = Time.time + fireRate;
@@ -109,7 +111,7 @@ public class Robot_Script : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("Enemy died");
+        AudioManager.instance.Play("will");
         anim.SetBool("die", true);
         Instantiate(priAmmo, gameObject.transform.position, Quaternion.identity);
         Destroy(gameObject,2f);

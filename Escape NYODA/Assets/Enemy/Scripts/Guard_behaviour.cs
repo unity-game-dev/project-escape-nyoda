@@ -55,7 +55,7 @@ public class Guard_behaviour : MonoBehaviour
     {
         float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
 
-        if (distanceFromPlayer <= shootingRange && nextFireTime < Time.time)
+        if (distanceFromPlayer <= shootingRange && nextFireTime < Time.time && !attackMode)
         {
             Instantiate(bullet, bulletParent.transform.position, Quaternion.identity);
             Debug.Log("Bullet");
@@ -110,17 +110,18 @@ public class Guard_behaviour : MonoBehaviour
         distance = Vector2.Distance(transform.position, target.position);
         if(distance > attackDistance)
         {
-            
             StopAttack();
         }
         else if(attackDistance >= distance && cooling == false)
         {
+            
             Attack();
         }
 
         if (cooling)
         {
             Cooldown();
+
             anim.SetBool("attack1", false);
             
         }
@@ -142,6 +143,7 @@ public class Guard_behaviour : MonoBehaviour
 
         timer = intTimer;
         attackMode = true;
+        
         //AudioManager.instance.StopPlaying("Guard_walk");
         anim.SetBool("canWalk", false);
         anim.SetBool("attack1", true);
@@ -162,6 +164,7 @@ public class Guard_behaviour : MonoBehaviour
     {
         cooling = false;
         attackMode = false;
+        
         anim.SetBool("attack1", false);
     }
     void RaycastDebugger()
@@ -234,7 +237,7 @@ public class Guard_behaviour : MonoBehaviour
     }
     void Die()
     {
-        
+        AudioManager.instance.Play("power");
         anim.SetBool("die", true);
         Destroy(gameObject, 1.5f);
         this.enabled = false;
