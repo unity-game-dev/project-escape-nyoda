@@ -228,6 +228,7 @@ public class Guard_behaviour : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
+            FindObjectOfType<GameManager>().EndDemo();
         }
     }
     private void OnDrawGizmosSelected()

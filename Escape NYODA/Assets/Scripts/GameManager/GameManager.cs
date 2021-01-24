@@ -3,21 +3,37 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    bool gameHasEnded = false;
-    public float restartWaitTime = 2f;
+    bool playerHasDied = false;
+    bool demoHasEnded = false;
+    public float gameOverWaitTime = 2f;
+    public float demoOverWaitTime = 10f;
     public void EndGame()
     {
-        if(gameHasEnded == false)
+        if(playerHasDied == false)
         {
-            gameHasEnded = true;
+            playerHasDied = true;
             Debug.Log("GAME OVER");
-            Invoke("Restart", restartWaitTime);
+            Invoke("GameOver", gameOverWaitTime);
         }
         
     }
-
-    void Restart()
+    public void EndDemo()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        if(demoHasEnded == false)
+        {
+            demoHasEnded = true;
+            Debug.Log("Demo Over");
+            Invoke("DemoOver", demoOverWaitTime);
+        }
+    }
+
+    void DemoOver()
+    {
+        SceneManager.LoadScene("ThankYou");
+    }
+
+    void GameOver()
+    {
+        SceneManager.LoadScene("GameOver");
     }
 }
