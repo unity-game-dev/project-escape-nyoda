@@ -18,6 +18,7 @@ public class IgorHealth : MonoBehaviour
     //public Button button;
     public Text healthText;
     // Start is called before the first frame update
+    public GameObject playerUI;
     void Start()
     {
         currentHealth = maxHealth;
@@ -60,5 +61,6 @@ public class IgorHealth : MonoBehaviour
         anim.SetBool("IsDead", true);
         Destroy(gameObject, 1.2f);
         //this.enabled = false;
+        playerUI.SetActive(false);
     }
 }
