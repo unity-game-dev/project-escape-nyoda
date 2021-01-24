@@ -1,7 +1,7 @@
 ﻿using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class MainMenuNEw : MonoBehaviour
+public class PlayScript : MonoBehaviour
 {
     // Start is called before the first frame update
     public void PlayGame(string level)
