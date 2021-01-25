@@ -20,13 +20,19 @@ public class PlayerMovement : MonoBehaviour {
 	public LayerMask whatIsLadder;
 	private float inputVertical;
 	private bool isWalking;
-
+	
 	private bool isClimbing;
 	//private bool isDash;
 	public IgorDash igorDash;
+	public IgorHealth igorHealth;
 	// Update is called once per frame
+
 	void Update () {
 		if (Time.timeScale == 0)
+		{
+			return;
+		}
+		if (igorHealth.isDead == true)
 		{
 			return;
 		}

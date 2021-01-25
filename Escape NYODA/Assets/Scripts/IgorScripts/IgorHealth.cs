@@ -20,6 +20,7 @@ public class IgorHealth : MonoBehaviour
     public Text healthText;
     // Start is called before the first frame update
     public GameObject playerUI;
+    public bool isDead = false;
     void Start()
     {
         arm=GameObject.FindGameObjectWithTag("arm");
@@ -60,6 +61,7 @@ public class IgorHealth : MonoBehaviour
 
     public void igorDead()
     {
+        isDead = true;
         Destroy(arm);
         anim.SetTrigger("Dead");
         //Destroy(gameObject, 1.2f);
