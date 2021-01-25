@@ -125,7 +125,7 @@ public class Robot_Script : MonoBehaviour
             drop = 0;
         }
         
-        Destroy(gameObject,2f);
+        Destroy(gameObject,1.2f);
         this.enabled = false;
 
     }
