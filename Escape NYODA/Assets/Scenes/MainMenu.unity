@@ -434,11 +434,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 76439864}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 015087a0bf7cea24996aa00a8c9b6539, type: 3}
+  m_Script: {fileID: 11500000, guid: 021910865bdf85d4886d692eacebe19b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlsUI: {fileID: 422516039}
-  MainMenuUI: {fileID: 1743436100}
+  MenuUI: {fileID: 1743436100}
+  PotionUI: {fileID: 1382643462}
 --- !u!114 &76439867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,7 +495,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 76439866}
-        m_MethodName: close
+        m_MethodName: open
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1663,9 +1663,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 244889117}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41d6cfc67e7e9414499ca5727694869b, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b078432cbfe71045a012ebd207f9fd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  potionUI: {fileID: 1382643462}
+  barrierUI: {fileID: 1267913377}
 --- !u!114 &244889120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1722,7 +1724,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 244889119}
-        m_MethodName: quit
+        m_MethodName: openPotion
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
