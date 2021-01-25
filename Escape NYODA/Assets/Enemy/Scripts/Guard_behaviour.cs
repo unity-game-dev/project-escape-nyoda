@@ -20,6 +20,7 @@ public class Guard_behaviour : MonoBehaviour
     public GameObject bulletParent;
     public float shootingRange;
     public float fireRate = 1;
+    public GameObject playerUI;
     #endregion
 
     #region Private Variables
@@ -41,6 +42,7 @@ public class Guard_behaviour : MonoBehaviour
     {
         currentHealth = maxHealth;
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        playerUI = GameObject.FindGameObjectWithTag("PlayerUI");
     }
     void Awake()
     {
@@ -229,6 +231,7 @@ public class Guard_behaviour : MonoBehaviour
         {
             Die();
             FindObjectOfType<GameManager>().EndDemo();
+
         }
     }
     private void OnDrawGizmosSelected()
@@ -242,6 +245,6 @@ public class Guard_behaviour : MonoBehaviour
         anim.SetBool("die", true);
         Destroy(gameObject, 1.5f);
         this.enabled = false;
-
+        playerUI.SetActive(false);
     }
 }

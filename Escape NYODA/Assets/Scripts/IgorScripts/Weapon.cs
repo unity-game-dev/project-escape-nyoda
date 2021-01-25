@@ -17,6 +17,8 @@ public class Weapon : MonoBehaviour
     private void Start()
     {
         rb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
+        primaryAmmo.text = pAmmo.ToString();
+        secondaryAmmo.text = sAmmo.ToString();
     }
     // Update is called once per frame
     void Update()

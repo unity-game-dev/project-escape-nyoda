@@ -164,6 +164,7 @@ Transform:
   - {fileID: 5910716448522001881}
   - {fileID: 1227327370225271123}
   - {fileID: 252821763}
+  - {fileID: 5910716448430027821}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -339,8 +340,8 @@ MonoBehaviour:
   missilePrefab: {fileID: 6945983988611578037, guid: fd23b8f9146b70547bf1b5a7b03dedd3,
     type: 3}
   armRotation: {fileID: 3272368896046871070}
-  pAmmo: 0
-  sAmmo: 0
+  pAmmo: 100
+  sAmmo: 100
   primaryAmmo: {fileID: 0}
   secondaryAmmo: {fileID: 0}
 --- !u!114 &1833437026
@@ -402,6 +403,7 @@ MonoBehaviour:
   healthBoost: 30
   anim: {fileID: 5910716449504629960}
   healthText: {fileID: 0}
+  playerUI: {fileID: 0}
 --- !u!114 &675545784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -570,3 +572,103 @@ MonoBehaviour:
   isKnife: 0
   isPrimary: 0
   isSecondary: 0
+--- !u!1001 &5400032941626325581
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5910716449504629962}
+    m_Modifications:
+    - target: {fileID: 1799135354732777056, guid: f6f468876a8574844a77a9478a204b8e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799135354732777056, guid: f6f468876a8574844a77a9478a204b8e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799135354732777056, guid: f6f468876a8574844a77a9478a204b8e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799135354732777056, guid: f6f468876a8574844a77a9478a204b8e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799135354732777056, guid: f6f468876a8574844a77a9478a204b8e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99970907
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799135354732777056, guid: f6f468876a8574844a77a9478a204b8e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799135354732777056, guid: f6f468876a8574844a77a9478a204b8e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799135354732777056, guid: f6f468876a8574844a77a9478a204b8e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0241223
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799135354732777056, guid: f6f468876a8574844a77a9478a204b8e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799135354732777056, guid: f6f468876a8574844a77a9478a204b8e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799135354732777056, guid: f6f468876a8574844a77a9478a204b8e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799135354732777057, guid: f6f468876a8574844a77a9478a204b8e,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.995283
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799135354732777057, guid: f6f468876a8574844a77a9478a204b8e,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.9998828
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799135354732777057, guid: f6f468876a8574844a77a9478a204b8e,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799135354732777057, guid: f6f468876a8574844a77a9478a204b8e,
+        type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799135354732777057, guid: f6f468876a8574844a77a9478a204b8e,
+        type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 9.486681
+      objectReference: {fileID: 0}
+    - target: {fileID: 1799135354732777059, guid: f6f468876a8574844a77a9478a204b8e,
+        type: 3}
+      propertyPath: m_Name
+      value: Igor Lighting
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f6f468876a8574844a77a9478a204b8e, type: 3}
+--- !u!4 &5910716448430027821 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1799135354732777056, guid: f6f468876a8574844a77a9478a204b8e,
+    type: 3}
+  m_PrefabInstance: {fileID: 5400032941626325581}
+  m_PrefabAsset: {fileID: 0}
