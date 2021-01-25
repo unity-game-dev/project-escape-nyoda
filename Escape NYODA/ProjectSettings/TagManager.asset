@@ -17,6 +17,7 @@ TagManager:
   - bossObstacle
   - Gem
   - attack_collider
+  - arm
   layers:
   - Default
   - TransparentFX
