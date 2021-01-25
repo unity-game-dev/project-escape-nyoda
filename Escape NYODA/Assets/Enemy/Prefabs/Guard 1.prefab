@@ -404,12 +404,13 @@ MonoBehaviour:
   timer: 1.16
   leftLimit: {fileID: 0}
   rightLimit: {fileID: 0}
-  maxHealth: 200
+  maxHealth: 250
   currentHealth: 0
   bullet: {fileID: 564696952047714896, guid: 5b9e77585af87bd4b9eb0ea611e53ad8, type: 3}
   bulletParent: {fileID: 3806878612518193027}
   shootingRange: 18.12
   fireRate: 1
+  playerUI: {fileID: 0}
 --- !u!1 &8313331456164132266
 GameObject:
   m_ObjectHideFlags: 0
