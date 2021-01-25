@@ -77,7 +77,7 @@ public class Robot_follow : MonoBehaviour
     void Die()
     {
         Debug.Log("Enemy died");
-        
+        GetComponent<BoxCollider2D>().enabled = false;
         anim.SetBool("die", true);
         AudioManager.instance.Play("MissileExplosion");
         Instantiate(secAmmo, gameObject.transform.position, Quaternion.identity);

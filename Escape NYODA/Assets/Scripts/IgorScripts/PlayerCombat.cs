@@ -12,7 +12,7 @@ public class PlayerCombat : MonoBehaviour
     public ArmRotation armRotation;
     public int attackDamage = 10;
     public Animator anim;
-   
+    public GameObject guard;
 
 
 
@@ -35,23 +35,43 @@ public class PlayerCombat : MonoBehaviour
         
     }
 
+    private void Start()
+    {
+        guard = GameObject.FindGameObjectWithTag("Guard");
+    }
     void Attack()
     {
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-        foreach(Collider2D enemy in hitEnemies)
+        foreach(Collider2D hitInfo in hitEnemies)
         {
             //Debug.Log(enemy.name);
-            if(enemy.tag == "Plasma")
+            if (hitInfo.tag == "Robot")
             {
-                enemy.GetComponent<Robot_follow>().TakeDamage(attackDamage);
+                Robot_Script enemy = hitInfo.GetComponent<Robot_Script>();
+                if (enemy != null)
+                {
+                    enemy.TakeDamage(attackDamage);
+                }
+
             }
-            if (enemy.tag == "Robot")
+            else if (hitInfo.tag == "Plasma")
             {
-                enemy.GetComponent<Robot_Script>().TakeDamage(attackDamage);
+                Robot_follow enemy = hitInfo.GetComponent<Robot_follow>();
+                if (enemy != null)
+                {
+                    enemy.TakeDamage(attackDamage);
+                }
+
             }
-            if (enemy.tag == "Guard")
+            else if (hitInfo.tag == "Guard")
             {
-                enemy.GetComponent<Guard_behaviour>().TakeDamage(attackDamage);
+                Guard_behaviour enemy = guard.GetComponent<Guard_behaviour>();
+                if (enemy != null)
+                {
+                    Debug.Log(enemy);
+                    enemy.TakeDamage(20);
+                }
+
             }
         }
         anim.SetTrigger("Combat");

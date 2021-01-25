@@ -16,6 +16,7 @@ TagManager:
   - redObstacle
   - bossObstacle
   - Gem
+  - attack_collider
   layers:
   - Default
   - TransparentFX

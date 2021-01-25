@@ -11,13 +11,13 @@ public class Robot_Script : MonoBehaviour
     public float fireRate = 1;
     public int maxHealth = 100;
     int currentHealth;
-
+    int drop = 1;
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
+    private GameObject attack_collider;
 
 
-    
     private float nextFireTime;
     protected bool facingRight;
     public GameObject bullet;
@@ -28,7 +28,10 @@ public class Robot_Script : MonoBehaviour
     public GameObject priAmmo;
     void Start()
     {
+        //GetComponent<BoxCollider2D>().enabled = true;
+        //attack_collider.GetComponent<BoxCollider2D>().enabled = true;
         currentHealth = maxHealth;
+        attack_collider = GameObject.FindGameObjectWithTag("attack_collider");
         player = GameObject.FindGameObjectWithTag("Player").transform;
         anim = GetComponent<Animator>();
     }
@@ -99,6 +102,7 @@ public class Robot_Script : MonoBehaviour
         facingRight = !facingRight;
     }
 
+    
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
@@ -108,12 +112,19 @@ public class Robot_Script : MonoBehaviour
             Die();
         }
     }
-
+ 
     void Die()
     {
         AudioManager.instance.Play("will");
+        //GetComponent<BoxCollider2D>().enabled = false;
+        //attack_collider.GetComponent<BoxCollider2D>().enabled=false;
         anim.SetBool("die", true);
-        Instantiate(priAmmo, gameObject.transform.position, Quaternion.identity);
+        if(drop == 1)
+        {
+            Instantiate(priAmmo, gameObject.transform.position, Quaternion.identity);
+            drop = 0;
+        }
+        
         Destroy(gameObject,2f);
         this.enabled = false;
 

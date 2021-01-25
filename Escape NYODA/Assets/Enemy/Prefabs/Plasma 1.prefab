@@ -173,8 +173,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  lineOfSite: 4.17
-  shootingRange: 2.96
+  lineOfSite: 10.42
+  shootingRange: 5.45
   fireRate: 1
   maxHealth: 100
   bullet: {fileID: 7395892910085870760, guid: f504d11486d471342a54dc3651e7e7df, type: 3}
