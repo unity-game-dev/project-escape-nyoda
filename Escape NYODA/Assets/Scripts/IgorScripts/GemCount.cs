@@ -16,6 +16,11 @@ public class GemCount : MonoBehaviour
     private void Update()
     {
         count.text = gemCount.ToString();
+        if(gemCount == 4)
+        {
+            AudioManager.instance.Play("BossBgm");
+            AudioManager.instance.StopPlaying("BgMusic");
+        }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {

@@ -34,6 +34,7 @@ public class Bullet_Script : MonoBehaviour
                 else
                 {
                     target.GetComponent<Animator>().SetTrigger("Hurt");
+                    AudioManager.instance.Play("Hurt");
                     enemy.TakeDamage(15);
                 }
             }

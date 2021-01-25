@@ -81,6 +81,7 @@ public class Robot_Script : MonoBehaviour
                 {
                     enemy.TakeDamage(10);
                     anime.SetTrigger("Hurt");
+                    AudioManager.instance.Play("Hurt");
                 }
             }
         }
