@@ -76,11 +76,11 @@ public class ArmRotation : MonoBehaviour
 
     void whenFacingLeft()
     {
-        if (Input.GetButtonDown("counterClockwise"))
+        if (Input.GetButtonDown("clockwise"))
         {
             GetComponent<Transform>().eulerAngles = new Vector3(-180, 0, 135);
         }
-        else if (Input.GetButtonDown("clockwise"))
+        else if (Input.GetButtonDown("counterClockwise"))
         {
             GetComponent<Transform>().eulerAngles = new Vector3(180, 0, -135);
         }
