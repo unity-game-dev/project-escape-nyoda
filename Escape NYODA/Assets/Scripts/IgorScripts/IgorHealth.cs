@@ -15,12 +15,14 @@ public class IgorHealth : MonoBehaviour
     public IgorInvincible igorInvincible;
     public int healthBoost = 30;
     public Animator anim;
+    public GameObject arm;
     //public Button button;
     public Text healthText;
     // Start is called before the first frame update
     public GameObject playerUI;
     void Start()
     {
+        arm=GameObject.FindGameObjectWithTag("arm");
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
     }
@@ -58,6 +60,7 @@ public class IgorHealth : MonoBehaviour
 
     public void igorDead()
     {
+        Destroy(arm);
         anim.SetTrigger("Dead");
         //Destroy(gameObject, 1.2f);
         //this.enabled = false;
