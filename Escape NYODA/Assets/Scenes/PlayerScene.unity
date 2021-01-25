@@ -9923,6 +9923,18 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 5910716448461207291}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2009651022 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 675545783, guid: 27aa46ac8eb35b04baedc69946f8968d,
+    type: 3}
+  m_PrefabInstance: {fileID: 5910716448461207291}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009651014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7821eddd944af1146bc0d4d442f96558, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2013262470 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1901197129858846316, guid: 883dc908daf34824f8b2a429cfb28eaf,
@@ -11461,6 +11473,11 @@ PrefabInstance:
       propertyPath: count
       value: 
       objectReference: {fileID: 496790897}
+    - target: {fileID: 5910716449504629961, guid: 27aa46ac8eb35b04baedc69946f8968d,
+        type: 3}
+      propertyPath: igorHealth
+      value: 
+      objectReference: {fileID: 2009651022}
     - target: {fileID: 5910716449504629962, guid: 27aa46ac8eb35b04baedc69946f8968d,
         type: 3}
       propertyPath: m_RootOrder

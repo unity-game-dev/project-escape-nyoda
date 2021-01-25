@@ -17,12 +17,11 @@ public class DashAddButton : MonoBehaviour
 
     public void Use()
     {
-        if (igorDash.currentDashTime >= 0f)
-        {
+        
             igorDash.currentDashTime += dashBoost;
             Instantiate(dashEffect, player.position, Quaternion.identity);
             Destroy(gameObject);
-        }
+        
 
     }
 }
