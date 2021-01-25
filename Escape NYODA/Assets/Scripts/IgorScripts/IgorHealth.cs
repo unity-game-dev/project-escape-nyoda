@@ -59,7 +59,7 @@ public class IgorHealth : MonoBehaviour
     public void igorDead()
     {
         anim.SetBool("IsDead", true);
-        Destroy(gameObject, 1.2f);
+        //Destroy(gameObject, 1.2f);
         //this.enabled = false;
         playerUI.SetActive(false);
     }

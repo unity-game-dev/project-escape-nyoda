@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
 {
     bool playerHasDied = false;
     bool demoHasEnded = false;
-    public float gameOverWaitTime = 2f;
+    public float gameOverWaitTime = 1f;
     public float demoOverWaitTime = 10f;
     public void EndGame()
     {
