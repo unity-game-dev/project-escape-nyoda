@@ -16,11 +16,8 @@ public class InvincibleAddButton : MonoBehaviour
 
     public void Use()
     {
-        if (igorInvincible.currentInvincibleTime > 0)
-        {
             igorInvincible.currentInvincibleTime += invincibleBoost;
             Instantiate(invincibleEffect, player.position, Quaternion.identity);
             Destroy(gameObject);
-        }
     }
 }

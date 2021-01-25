@@ -158,4 +158,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invincibleBoost: 5
-  isUseHealthItem: 0
+  invincibleEffect: {fileID: 3445008455054514130, guid: 681f9e60996a4d843bf432012e80892d,
+    type: 3}
