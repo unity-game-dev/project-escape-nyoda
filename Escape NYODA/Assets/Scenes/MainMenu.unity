@@ -11623,9 +11623,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2022472187}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41d6cfc67e7e9414499ca5727694869b, type: 3}
+  m_Script: {fileID: 11500000, guid: d5aae8aa9a62cc54b8e6ea56cf153544, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BarrierUI: {fileID: 1267913377}
+  GemUI: {fileID: 1560173145}
 --- !u!114 &2022472190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11682,7 +11684,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2022472189}
-        m_MethodName: quit
+        m_MethodName: openBarrier
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
