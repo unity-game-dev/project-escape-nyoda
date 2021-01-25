@@ -60,7 +60,7 @@ public class Guard_behaviour : MonoBehaviour
         if (distanceFromPlayer <= shootingRange && nextFireTime < Time.time && !attackMode)
         {
             Instantiate(bullet, bulletParent.transform.position, Quaternion.identity);
-            Debug.Log("Bullet");
+            //Debug.Log("Bullet");
             nextFireTime = Time.time + fireRate;
         }
         if (!attackMode)
@@ -104,7 +104,7 @@ public class Guard_behaviour : MonoBehaviour
             inRange = true;
             Flip();
         }
-        Debug.Log(trig.name);
+        //Debug.Log(trig.name);
     }
 
     void EnemyLogic()
