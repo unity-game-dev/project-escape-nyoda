@@ -6780,7 +6780,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1560173146
 Transform:
   m_ObjectHideFlags: 0
@@ -7479,9 +7479,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1693609709}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41d6cfc67e7e9414499ca5727694869b, type: 3}
+  m_Script: {fileID: 11500000, guid: 14a0e60f9f390714ab6267d1a409d0e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GemUI: {fileID: 1560173145}
+  controlUI: {fileID: 422516039}
 --- !u!114 &1693609712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7538,7 +7540,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1693609711}
-        m_MethodName: quit
+        m_MethodName: openGems
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
