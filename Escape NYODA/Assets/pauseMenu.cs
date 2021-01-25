@@ -34,7 +34,7 @@ public class pauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale=0f;
         GameIsPaused = true;
-
+        AudioManager.instance.StopPlaying("characWalk");
     }
     public void QuitGame(){
         Debug.Log("going to menu");

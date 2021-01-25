@@ -12,7 +12,6 @@ public class PlayerMovement : MonoBehaviour {
 
 	float horizontalMove = 0f;
 	bool jump = false;
-	bool crouch = false;
 	float fJumpPressedRemember = 0;
 	float fJumpPressedRememberTime = 2f;
 	float fGroundedRemember = 0;
@@ -33,10 +32,14 @@ public class PlayerMovement : MonoBehaviour {
 		}
 		if (igorDash.currentDashTime > 0f)
 		{
+			fGroundedRememberTime = 5f;
+			fJumpPressedRememberTime = 5f;
 			runSpeed = 80f;
 			climbSpeed = 10f;
 		} else
 		{
+			fGroundedRememberTime = 2f;
+			fJumpPressedRememberTime = 2f;
 			runSpeed = 40f;
 			climbSpeed = 5f;
 		}
@@ -44,10 +47,10 @@ public class PlayerMovement : MonoBehaviour {
 		anim.SetFloat("Speed", Mathf.Abs(horizontalMove));
 		if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
 		{
-				AudioManager.instance.Play("characWalk");
+				//AudioManager.instance.Play("characWalk");
 		} else if(Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
 		{
-			AudioManager.instance.StopPlaying("characWalk");
+			//AudioManager.instance.StopPlaying("characWalk");
 		}
 
 		fGroundedRemember -= Time.deltaTime;
@@ -72,13 +75,7 @@ public class PlayerMovement : MonoBehaviour {
 		{
 			AudioManager.instance.Play("characJump");
 		}
-		if (Input.GetButtonDown("Crouch"))
-		{
-			crouch = true;
-		} else if (Input.GetButtonUp("Crouch"))
-		{
-			crouch = false;
-		}
+		
 
 	}
 
@@ -86,10 +83,7 @@ public class PlayerMovement : MonoBehaviour {
 	{
 		anim.SetBool("IsJumping", false);
 	}
-	public void OnCrouching(bool isCrouching)
-	{
-		anim.SetBool("IsCrouching", isCrouching);
-	}
+	
 
 
 	void FixedUpdate ()

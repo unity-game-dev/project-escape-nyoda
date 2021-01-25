@@ -10,7 +10,7 @@ public class Weapon : MonoBehaviour
     public GameObject missilePrefab;
     public ArmRotation armRotation;
     private Rigidbody2D rb;
-    public int pAmmo = 0;
+    public int pAmmo = 5;
     public int sAmmo = 0;
     public Text primaryAmmo;
     public Text secondaryAmmo;
@@ -49,7 +49,7 @@ public class Weapon : MonoBehaviour
             sAmmo--;
             secondaryAmmo.text = sAmmo.ToString();
             AudioManager.instance.Play("Missile");
-            CinemachineShake.Instance.ShakeCamera(10f, 0.2f);
+            CinemachineShake.Instance.ShakeCamera(25f, 0.2f);
         }
     }
 
