@@ -343,9 +343,9 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 256
-  attack_collider: {fileID: 0}
   bullet: {fileID: 0}
   bulletParent: {fileID: 0}
+  anime: {fileID: 0}
   priAmmo: {fileID: 3184588566939999843, guid: c4f2fae57691abe4d9e591ee34cba112, type: 3}
 --- !u!95 &8658803475586864923
 Animator:

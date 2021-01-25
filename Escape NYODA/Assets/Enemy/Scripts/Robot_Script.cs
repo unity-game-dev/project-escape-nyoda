@@ -24,6 +24,7 @@ public class Robot_Script : MonoBehaviour
     public GameObject bulletParent;
     private Transform player;
     private Animator anim;
+    public Animator anime;
 
     public GameObject priAmmo;
     void Start()
@@ -79,6 +80,8 @@ public class Robot_Script : MonoBehaviour
                 } else
                 {
                     enemy.TakeDamage(10);
+                    anime.SetTrigger("Hurt");
+                    AudioManager.instance.Play("Hurt");
                 }
             }
         }

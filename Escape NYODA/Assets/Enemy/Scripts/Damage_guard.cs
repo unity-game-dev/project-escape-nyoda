@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Damage_guard : MonoBehaviour
 {
+    public Animator anim;
     // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D trig)
     {
@@ -13,6 +14,7 @@ public class Damage_guard : MonoBehaviour
             if (enemy != null)
             {
                 enemy.TakeDamage(15);
+                anim.SetTrigger("Hurt");
             }
         }
     }

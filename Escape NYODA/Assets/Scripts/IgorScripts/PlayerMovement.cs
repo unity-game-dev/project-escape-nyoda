@@ -115,8 +115,10 @@ public class PlayerMovement : MonoBehaviour {
 			inputVertical = Input.GetAxisRaw("Vertical");
 			controller.m_Rigidbody2D.velocity = new Vector2(controller.m_Rigidbody2D.velocity.x, inputVertical * climbSpeed);
 			controller.m_Rigidbody2D.gravityScale = 0;
+			anim.SetBool("IsClimbing", true);
 		} else
 		{
+			anim.SetBool("IsClimbing", false);
 			controller.m_Rigidbody2D.gravityScale = 4;
 		}
 	}
