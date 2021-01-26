@@ -40,7 +40,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<img src="img/screenshot.PNG" alt="scratch-website-screenshot">
+<img src="Escape NYODA/Assets/gameSC.jpeg" alt="scratch-website-screenshot">
 <br/>
 
 Scratch is mini CSS framework for giving the users a jumpstart to create a website.
@@ -59,22 +59,6 @@ Key features:
 
 * Unity
 * C#
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-Adding Scratch's stylesheet is very easy . Just follow the given steps given below.
-
-
-### Linking the stylesheet to HTML
-
-1. Download the CSS file form the website (https://css-scratch.netlify.app/)
-2. Add the stylsheet link above all the other CSS stylesheet links.
-   ```sh
-   <link rel="stylesheet" href="scratch-main.css">
-
-   ```
 
 
 <!-- CONTACT -->
