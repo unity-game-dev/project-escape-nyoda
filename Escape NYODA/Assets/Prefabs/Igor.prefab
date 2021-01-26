@@ -303,7 +303,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   igorDash: {fileID: 675545784}
-  igorHealth: {fileID: 0}
+  igorHealth: {fileID: 675545783}
 --- !u!95 &5910716449504629960
 Animator:
   serializedVersion: 3
@@ -396,7 +396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7821eddd944af1146bc0d4d442f96558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1000
+  maxHealth: 200
   currentHealth: 0
   healthBar: {fileID: 0}
   healthAddButton: {fileID: 7955412663274789401, guid: 538fcd2beb1fa8349bba819b6c452100,
@@ -483,7 +483,7 @@ GameObject:
   - component: {fileID: 3272368896046871070}
   m_Layer: 8
   m_Name: Arm
-  m_TagString: Untagged
+  m_TagString: arm
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
