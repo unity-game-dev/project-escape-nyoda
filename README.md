@@ -60,7 +60,7 @@ This prototype/demo involves only the first stage of the actual game idea that w
 
 
 <!-- install -->
-## install
+## Installation
 
 No need for any installation. Just run the 'Escape NYODA' application to play .
 
