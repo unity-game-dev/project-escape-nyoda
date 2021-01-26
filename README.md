@@ -43,7 +43,7 @@
 <img src="Escape NYODA/Assets/gameSC.jpeg" alt="Escape NYDOA in-game screenshot">
 <br/>
 
-"Escape NYODA" is an awesome platformer game which takes visual inspiration from retro 1-bit and 8-bit games. The music also gives off players the retro vibes.
+"Escape NYODA" is an awesome survival platformer game which takes visual inspiration from retro 1-bit and 8-bit games. The music also gives off players the retro vibes.
 The game is set in a futuristic, abandoned 1-bit nuclear powerplant with biotech enemies filled with rage. This is a single player game where the player has to survive and get out of a power plant with optimal use of available resources and defeating enemies.
 
 <br/>
