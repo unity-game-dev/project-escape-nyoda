@@ -9,7 +9,7 @@
   <h3 align="center">Escape NYODA</h3>
 
   <p align="center">
-    “Escape NYODA” is a game about learning and using the concepts of Planning, Resource optimization, and Risk management by integrating these concepts in a 2D survival platformer game. This is a single player game where the player has to survive and get out of a power plant by solving puzzles and defeating enemies .
+    “Escape NYODA” is a game about learning and using the concepts of Planning, Resource optimization, and Risk management by integrating these concepts in a 2D survival platformer game. Player has to survive and get out of a power plant with optimal use of available resources.
     <br />
     <a href="https://github.com/unity-game-dev/project-escape-nyoda"><strong>Explore the docs »</strong></a>
     <br />
