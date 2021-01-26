@@ -1,18 +1,17 @@
 
-[![MIT License][license-shield]][license-url]
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
- 
-    <img src="project-escape-nyoda\Escape NYODA\Assets\MenuSprite\idle1.png" alt="Logo" width="80" height="80">
+  <a href="#">
+    <img src="Escape NYODA/Assets/MenuSprite/idle1.png" alt="Logo" width="90" height="90"/>
+  </a>
 
-  <h3 align="center">Scratch-A mini CSS Framework</h3>
+  <h3 align="center">Escape NYODA</h3>
 
   <p align="center">
-    An awesome CSS framework to jumpstart your website!
+    “Escape NYODA” is a game about learning and using the concepts of Planning, Resource optimization, and Risk management by integrating these concepts in a 2D survival platformer game. This is a single player game where the player has to survive and get out of a power plant by solving puzzles and defeating enemies .
     <br />
-    <a href="https://github.com/RuntimeTerror10/Scratch"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/unity-game-dev/project-escape-nyoda"><strong>Explore the docs »</strong></a>
     <br />
     <br />
    
@@ -30,17 +29,10 @@
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+   </li>
+   <li><a href="#install">Installation</a></li>
+    <li><a href="#credits">Credits</a></li>
+   <li><a href="#team">Our Team</a></li>
   </ol>
 </details>
 
@@ -65,9 +57,8 @@ Key features:
 ### Built With
 
 
-* HTML
-* CSS
-* JavaScript
+* Unity
+* C#
 
 
 
@@ -86,35 +77,32 @@ Adding Scratch's stylesheet is very easy . Just follow the given steps given bel
    ```
 
 
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
-
 <!-- CONTACT -->
-## Contact
+## install
 
-Your Name - [@Parth_codes](https://twitter.com/Parth_codes) 
-
-Project Link: [https://github.com/RuntimeTerror10/Scratch](https://github.com/RuntimeTerror10/Scratch)
-
+No need for any installation. Just run the 'Escape NYODA' application to play .
 
 
 <!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [typed.js](https://mattboldt.com/demos/typed-js/)
-* [Font Awesome](https://fontawesome.com)
+## credits
+* [vectorpixelstar](https://vectorpixelstar.itch.io)
+* [secrethideout](https://secrethideout.itch.io)
+* [cheesebaron2](https://cheesebaron2.itch.io)
+* [loadedinreverse](https://loadedinreverse.itch.io)
+* [pixelhole](https://pixelhole.itch.io)
+* [flippurgatory](https://flippurgatory.itch.io)
+* [smashdragons](https://smashdragons.itch.io)
+* [Eddie's workshop](https://eddies-workshop.itch.io)
+* [PiXeRaT](https://pixerat.itch.io )
+* [just a cookie](https://just-a-cookie.itch.io)
 
 
+## Our team
 
+* [Debashish Majumdar](https://github.com/NotFarFromBlonded)
+* [Parth Bhardwaj](https://github.com/RuntimeTerror10)
+* [Rohit Singh](https://github.com/Rohit14kvs)
+* [Shashwat Bansal](https://github.com/bansal247)
 
 
 
