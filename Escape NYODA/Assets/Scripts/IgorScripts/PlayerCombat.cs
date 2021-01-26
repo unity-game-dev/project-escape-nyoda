@@ -74,8 +74,11 @@ public class PlayerCombat : MonoBehaviour
 
             }
         }
-        anim.SetTrigger("Combat");
-        CinemachineShake.Instance.ShakeCamera(3f, 0.1f);
+        
+        
+            anim.SetTrigger("Combat");
+            CinemachineShake.Instance.ShakeCamera(3f, 0.1f);
+        
     }
     private void OnDrawGizmosSelected()
     {

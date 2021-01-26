@@ -35,6 +35,7 @@ public class Robot_Script : MonoBehaviour
         attack_collider = GameObject.FindGameObjectWithTag("attack_collider");
         player = GameObject.FindGameObjectWithTag("Player").transform;
         anim = GetComponent<Animator>();
+        anime = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
     }
 
     // Update is called once per frame

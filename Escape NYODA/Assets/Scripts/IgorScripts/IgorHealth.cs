@@ -41,10 +41,7 @@ public class IgorHealth : MonoBehaviour
                 
             } 
         }
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            TakeDamage(100);
-        }
+        
     }
 
     //****  CHANGED TAKEDAMAGE TO PUBLIC ***///

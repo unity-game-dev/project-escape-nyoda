@@ -14,8 +14,8 @@ public class Guard_behaviour : MonoBehaviour
     public float timer;
     public Transform leftLimit;
     public Transform rightLimit; 
-    public int maxHealth = 200;
-    public int currentHealth;
+    public float maxHealth = 300;
+    public float currentHealth;
     public GameObject bullet;
     public GameObject bulletParent;
     public float shootingRange;
@@ -226,7 +226,8 @@ public class Guard_behaviour : MonoBehaviour
         
         currentHealth -= damage;
         
-        
+        anim.SetTrigger("hurt");
+        AudioManager.instance.Play("Guard_hurt");
         if (currentHealth <= 0)
         {
             Die();

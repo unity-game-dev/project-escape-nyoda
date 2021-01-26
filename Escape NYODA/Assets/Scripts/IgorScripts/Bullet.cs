@@ -48,8 +48,7 @@ public class Bullet : MonoBehaviour
             Guard_behaviour enemy = guard.GetComponent<Guard_behaviour>();
             if (enemy != null)
             {
-                Debug.Log(enemy);
-                enemy.TakeDamage(attackDamage);
+                enemy.TakeDamage(25);
             }
 
         }
@@ -60,7 +59,7 @@ public class Bullet : MonoBehaviour
             Destroy(orangeObstacle);
         }
         Debug.Log(hitInfo.name);
-        if (hitInfo.name != "attack_collider" || hitInfo.name != "triggerArea" || hitInfo.name != "hit_box") 
+        if (hitInfo.name != "attack_collider" || hitInfo.name != "triggerArea" || hitInfo.name != "hit_box" || hitInfo.name != "Guard_Bullet" || hitInfo.name != "BossBG") 
         {
             Instantiate(bulletImpact, transform.position, transform.rotation);
             Instantiate(bulletParticleImpact, transform.position, transform.rotation);
