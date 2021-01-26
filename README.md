@@ -31,7 +31,7 @@
       </ul>
    </li>
    <li><a href="#installation">Installation</a></li>
-    <li><a href="#Credits">Credits</a></li>
+    <li><a href="#credits">Credits</a></li>
    <li><a href="#team">Our Team</a></li>
   </ol>
 </details>
@@ -66,7 +66,7 @@ No need for any installation. Just run the 'Escape NYODA' application to play .
 
 
 <!-- ACKNOWLEDGEMENTS -->
-## credits
+## Credits
 * [vectorpixelstar](https://vectorpixelstar.itch.io)
 * [secrethideout](https://secrethideout.itch.io)
 * [cheesebaron2](https://cheesebaron2.itch.io)
