@@ -49,7 +49,7 @@ public class Weapon : MonoBehaviour
             sAmmo--;
             secondaryAmmo.text = sAmmo.ToString();
             AudioManager.instance.Play("Missile");
-            CinemachineShake.Instance.ShakeCamera(25f, 0.2f);
+            CinemachineShake.Instance.ShakeCamera(20f, 0.2f);
         }
     }
 

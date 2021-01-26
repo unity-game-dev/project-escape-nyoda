@@ -39,7 +39,8 @@ public class CinemachineShake : MonoBehaviour
 
             cinemachineBasicMultiChannelPerlin.m_AmplitudeGain = 
                 Mathf.Lerp(startingIntensity, 0f, (1 - shakeTimer / shakeTimerTotal));
-            
+            cinemachineBasicMultiChannelPerlin.m_FrequencyGain =
+                 Mathf.Lerp(startingIntensity, 0f, (1 - shakeTimer / shakeTimerTotal));
         }
     }
 }

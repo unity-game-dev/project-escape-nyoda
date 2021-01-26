@@ -58,7 +58,7 @@ public class Missile : MonoBehaviour
             Instantiate(missileParticleImpact, transform.position, transform.rotation);
             Destroy(gameObject);
             AudioManager.instance.Play("MissileExplosion");
-            CinemachineShake.Instance.ShakeCamera(25f, 0.2f);
+            CinemachineShake.Instance.ShakeCamera(20f, 0.2f);
         }
         
     }

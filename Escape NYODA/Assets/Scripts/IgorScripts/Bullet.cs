@@ -58,7 +58,6 @@ public class Bullet : MonoBehaviour
             orangeObstacle = GameObject.FindGameObjectWithTag("orangeObstacle");
             Destroy(orangeObstacle);
         }
-        Debug.Log(hitInfo.name);
         if (hitInfo.name != "attack_collider" || hitInfo.name != "triggerArea" || hitInfo.name != "hit_box" || hitInfo.name != "Guard_Bullet" || hitInfo.name != "BossBG") 
         {
             Instantiate(bulletImpact, transform.position, transform.rotation);
