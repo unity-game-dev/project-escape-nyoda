@@ -30,7 +30,7 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
    </li>
-   <li><a href="#install">Installation</a></li>
+   <li><a href="#installation">Installation</a></li>
     <li><a href="#credits">Credits</a></li>
    <li><a href="#team">Our Team</a></li>
   </ol>
