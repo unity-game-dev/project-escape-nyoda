@@ -5,6 +5,7 @@ using UnityEngine;
 public class Robot_Script : MonoBehaviour
 {
     // Start is called before the first frame update
+    int i = 1;
     public float speed;
     public float lineOfSite;
     public float shootingRange;
@@ -119,7 +120,10 @@ public class Robot_Script : MonoBehaviour
  
     void Die()
     {
+        if(i==1){
         AudioManager.instance.Play("will");
+        i=0;
+        }
         //GetComponent<BoxCollider2D>().enabled = false;
         //attack_collider.GetComponent<BoxCollider2D>().enabled=false;
         anim.SetBool("die", true);
