@@ -40,17 +40,15 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<img src="Escape NYODA/Assets/gameSC.jpeg" alt="scratch-website-screenshot">
+<img src="Escape NYODA/Assets/gameSC.jpeg" alt="Escape NYDOA in-game screenshot">
 <br/>
 
-Scratch is mini CSS framework for giving the users a jumpstart to create a website.
-Scratch covers all the major components and utilities to create a website.
+"Escape NYODA" is an awesome platformer game which takes visual inspiration from retro 1-bit and 8-bit games. The music also gives off players the retro vibes.
+The game is set in a futuristic, abandoned 1-bit nuclear powerplant with biotech enemies filled with rage. This is a single player game where the player has to survive and get out of a power plant with optimal use of available resources and defeating enemies.
 
+<br/>
 
-Key features:
-* Easy to use.
-* All components and utilities are made with pure CSS.
-* Every component can be easily customized.
+This prototype/demo involves only the first stage of the actual game idea that we proposed where the players become familiar with the mechanics of the game.
 
 
 
@@ -61,7 +59,7 @@ Key features:
 * C#
 
 
-<!-- CONTACT -->
+<!-- install -->
 ## install
 
 No need for any installation. Just run the 'Escape NYODA' application to play .
@@ -81,15 +79,11 @@ No need for any installation. Just run the 'Escape NYODA' application to play .
 * [just a cookie](https://just-a-cookie.itch.io)
 
 
-## Our team
+## Team
 
 * [Debashish Majumdar](https://github.com/NotFarFromBlonded)
 * [Parth Bhardwaj](https://github.com/RuntimeTerror10)
 * [Rohit Singh](https://github.com/Rohit14kvs)
 * [Shashwat Bansal](https://github.com/bansal247)
 
-
-
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 
